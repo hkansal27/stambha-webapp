@@ -2,6 +2,13 @@
   "name": "stambha-webapp",
   "version": "0.1.0",
   "private": true,
+  "auhor": "Himanshu Kansal",
+  "description": "Stambha Web Application- An application to design houses, front-end code in reactJs",
+  "keywords": [
+    "ReactJs",
+    "Bootstrap",
+    "ReactUI Material"
+  ],
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
