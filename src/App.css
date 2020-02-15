@@ -17,6 +17,7 @@
 
 :root {
   --primaryColor: #af9a7d;
+  --primaryLogoColor: #FE390D;
   --mainWhite: #fff;
   --offWhite: #f8f8f8;
   --mainBlack: #212121;
@@ -84,7 +85,7 @@ h1 {
 /* end of globals */
 
 /* Navbar */
-.navbar {
+.custom-navbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -94,70 +95,92 @@ h1 {
   z-index: 1;
 }
 
-.nav-header {
+.custom-nav-header {
   display: flex;
   justify-content: space-between;
 }
 
-.nav-btn {
+.custom-nav-btn {
   background: transparent;
   border: none;
   cursor: pointer;
   outline: none;
 }
 
-.nav-icon {
+.custom-nav-icon {
   font-size: 1.5rem;
-  color: var(--primaryColor);
+  color: var(--primaryLogoColor);
 }
 
-.nav-links {
+.logo-img {
+  height: 50px;
+}
+
+.custom-nav-links {
   height: 0;
   overflow: hidden;
   transition: var(--mainTransition);
   list-style-type: none;
-}
 
-.nav-links a {
   display: block;
   text-decoration: none;
-  padding: 1rem 0;
-  color: var(--mainBlack);
   transition: var(--mainTransition);
   text-align: center;
   font-size: 1rem;
-  font-weight: 600;
   letter-spacing: var(--mainSpacing);
+  color: #9C9C9C;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.nav-links a:hover {
-  color: var(--primaryColor);
+.custom-nav-links a {
+  display: block;
+  text-decoration: none;
+  transition: var(--mainTransition);
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: var(--mainSpacing);
+  color: #9C9C9C;
+  font-family: 'Open Sans', sans-serif;
+  margin: 20px 0;
+}
+
+.custom-nav-links a:hover {
+  color: var(--primaryLogoColor);
 }
 
 .show-nav {
-  height: 100px;
+  height: 100%;
+}
+
+.show-link {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .nav-btn {
+  .custom-nav-btn {
     display: none;
   }
 
-  .nav-center {
-    max-width: 1170px;
+  .custom-nav-center {
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
   }
 
-  .nav-links {
+  .custom-nav-links {
     height: auto;
     display: flex;
-    margin-left: 4rem;
+    align-items: center;
+    margin: 0;
   }
 
-  .nav-links a {
-    margin: 0 1rem;
+  .custom-nav-links a {
     padding: 0.5rem 0;
+    margin: 0;
+  }
+
+  .show-link {
+    display: block;
   }
 }
 

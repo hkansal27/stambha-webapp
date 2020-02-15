@@ -16,22 +16,49 @@ export default class Navbar extends Component {
 
     render() {
         return (
-            <nav className="navbar">
-                <div className="nav-center">
-                    <div className="nav-header">
+            <nav className="custom-navbar">
+                <div className="custom-nav-center">
+                    <div className="custom-nav-header">
                         <Link to="/">
-                            {/* <img src={logo} alt="Beach Resort" /> */}
+                            <img src="/images/Logo.jpg" alt="Stambha Logo" className="logo-img"/>
                         </Link>
-                        <button type="button" className="nav-btn" onClick={this.handleToggle}>
-                            <FaAlignRight className="nav-icon" />
+                        <button type="button" className="custom-nav-btn" onClick={this.handleToggle}>
+                            <FaAlignRight className="custom-nav-icon" />
                         </button>
                     </div>
-                    <ul className={this.state.isOpen ? "nav-links show-nav" : "nav-links"}>
+                    <ul className={this.state.isOpen ? "custom-nav-links show-nav" : "custom-nav-links"}>
                         <li> 
-                            <Link to="/" >Home</Link>
+                            <Link to="/">PROJECTS</Link>
+                        </li>
+                        <li className="show-link">
+                            &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
                         </li>
                         <li>
-                            <Link to="/about" >About Us</Link>
+                            <Link to="/about">ABOUT US</Link>
+                        </li>
+                        <li className="show-link">
+                            &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                        </li>
+                        <li> 
+                            <Link to="/" >DESIGN & BUILD</Link>
+                        </li>
+                        <li className="show-link">
+                            &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                        </li>
+                        <li> 
+                            <Link to="/" >CONTACT US &nbsp;&nbsp;&nbsp;</Link>
+                        </li>
+                    </ul>
+                    <ul className="custom-nav-links">
+                        <li> 
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/pg/stambhadesign/posts/?ref=page_internal&mt_nav=0">
+                                <img src="/images/icons/facebook.png" alt="facebook icon" className="social-media-icon"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCWtKGArml6QrqdhiGxOCyPQ">
+                                <img src="/images/icons/youtube.png" alt="youtube icon" className="social-media-icon"/>
+                            </a>
                         </li>
                     </ul>
                 </div>
