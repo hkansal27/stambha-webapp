@@ -519,3 +519,232 @@ h1 {
   margin: 10px auto;
   border: 2px solid #FF903E;
 }
+
+
+/* Team Pages */
+.team-banner {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--mainWhite);
+  padding: 2rem 1rem;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+}
+.team-banner h1 {
+  font-size: 4rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.defaultTeamBanner {
+  min-height: calc(100vh - 66px);
+  background: url("/images/teams/banner.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-body .team-card {
+  margin: 5% 0;
+}
+
+.team-body .team-card  .picture .team-picture {
+  width: 100%;
+}
+
+.team-body .team-card  .team-content {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+}
+
+.team-body .team-card  .team-content h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #000000;
+}
+.team-body .team-card  .team-content h3 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1.33;
+  color: #ee3124;
+}
+.team-body .team-card  .team-content p{
+  font-size: 1.2rem;
+  line-height: 1.88;
+  text-align: justify;
+  color: #58595b;
+}
+
+.team-right {
+  text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+
+  .team-banner h1 {
+    font-size: 2.5rem;
+  }
+  
+  .team-body .team-card {
+    margin: 10% 0;
+  }
+  
+  .team-body .team-card  .team-content h1 {
+    font-size: 2rem;
+  }
+  .team-body .team-card  .team-content h3 {
+    font-size: 1.5rem;
+  }
+  .team-body .team-card  .team-content p{
+    font-size: 1rem;
+  }
+
+  .team-right {
+    order: 1;
+    text-align: left;
+  }
+}
+
+/* Single Portfolio  */
+.single-project-banner {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--mainWhite);
+  padding: 2rem 1rem;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+} 
+
+.defaultProjectBanner {
+  min-height: calc(100vh - 66px);
+  background: url("/images/portfolio/banner.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-on {
+  display: none;
+}
+
+.single-project-banner .project-card {
+  background: white;
+  color: black;
+  position: absolute;
+  bottom: -100px;
+  width: 50%;
+  left: 100px;
+
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #333132;
+  text-align: left;
+
+  box-shadow: 1.1px 10.9px 17.6px 0.4px rgba(0, 0, 0, 0.04);
+  padding: 30px;
+}
+
+.single-project-banner .project-card  h1 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+
+.single-project-banner .project-card  p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #58595b;
+  margin-bottom: 40px;
+}
+
+.single-project-banner .project-card  h6 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.single-project-body {
+  margin-top: 10%;
+}
+
+.single-project-image {
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.single-project-footer  .project-footer {
+  display: flex;
+  align-items: center;
+}
+.single-project-footer .project-footer .back-image {
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.single-project-footer .project-footer .content {
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+
+  margin-left: 20px;
+}
+.single-project-footer .project-footer .content p {
+  font-size: 1rem;
+  color: #333132;
+}
+.single-project-footer .project-footer .content h6 {
+  color: #ee3124;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-off {
+    display: none;
+  }
+
+  .mobile-on {
+    display: block
+  }
+  
+  .project-card {
+    position: relative;
+    box-shadow: 1.1px 10.9px 17.6px 0.4px rgba(0, 0, 0, 0.04);
+    padding: 30px;
+  }
+  
+  .project-card  h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .project-card  p {
+    font-size: 1rem;
+    margin-bottom: 50px;
+  }
+  
+  .project-card  h6 {
+    font-size: 1.2rem;
+  }
+
+.single-project-footer .project-footer .back-image {
+  height: 60px;
+  width: 60px;
+}
+
+.single-project-footer .project-footer .content p {
+  font-size: .8rem;
+}
+.single-project-footer .project-footer .content h6 {
+  color: #ee3124;
+}
+}
