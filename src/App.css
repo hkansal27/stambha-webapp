@@ -186,6 +186,82 @@ h1 {
 
 /* end of navbar */
 
+
+/* Footer */
+.footer {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.custom-footer-center {
+  display: block;
+  color: #F8F8F8;
+}
+
+.custom-footer-links {
+  overflow: hidden;
+  transition: var(--mainTransition);
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.custom-footer-links a {
+  display: block;
+  text-decoration: none;
+  transition: var(--mainTransition);
+  font-size: 1rem;
+  color: #9C9C9C;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.36px;
+  text-align: right;
+
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.custom-footer-links a:hover {
+  color: var(--primaryLogoColor);
+}
+
+.footer-line {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: center !important;
+  color: #9C9C9C;
+}
+
+@media screen and (min-width: 768px) {
+  .custom-footer-center {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+
+  .custom-footer-links {
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .custom-footer-links a {
+    padding: 0.5rem 0;
+    margin-right: 20px;
+  }
+}
+
+/* end of footer */
+
+
+
+
 /* project section */
 .project-section {
   padding: 5rem 2rem;
