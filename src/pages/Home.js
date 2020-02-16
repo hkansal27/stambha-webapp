@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import Heading from '../components/Heading'
+import { Link } from 'react-router-dom';
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
@@ -23,7 +24,7 @@ export default class Home extends Component {
                 </Carousel>
 
                 {/* Project Section */}
-                <div className="project-section">
+                {/* <div className="project-section">
                     <Heading text="Projects" />
                     <div className="category-title">
                         <ul>
@@ -34,14 +35,14 @@ export default class Home extends Component {
                             <li>INSTITUTIONAL</li>
                         </ul>
                     </div>
-                </div>
+                </div> */}
 
                 {/* About us */}
-                <div className="about-section">
+                <div className="about-section" id="about">
                     <Heading text="About Us" />
                     <div className="container-fluid about-container">
                         <div className="row">
-                            <div className="col-md-6 col-xs-12">
+                            <div className="col-md-6 col-sm-12 order-xs-2">
                                 <div className="content-box">
                                     <div className="content">
                                         <span className="highlight"><span className="red-highlight">Stambha</span> Design House</span> embraces creative architects and best interior designers in Noida.
@@ -54,11 +55,8 @@ export default class Home extends Component {
                                 </div>
 
                             </div>
-                            <div className="col-md-6 col-xs-12">
+                            <div className="col-md-6 col-sm-12 order-xs-1">
                                 <div className="box">
-                                    <div>
-
-                                    </div>
                                     <div className="quote-content">
                                         <div className="quote">
                                             "God is in the details"
@@ -71,7 +69,7 @@ export default class Home extends Component {
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-md-6 col-xs-12">
+                            <div className="col-md-6 col-sm-12">
                                 <div className="box">
                                     <div>
 
@@ -89,7 +87,7 @@ export default class Home extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-6 col-xs-12">
+                            <div className="col-md-6 col-sm-12">
                                 <div className="content-box">
                                     <div className="content">
                                         Well designed spaces inspires its users by rejuvenating and re-energizing in every day's life. Besides interior consultant and architecture consultant, the design house has dedicated interior construction team and skilled craftsmen. Our team has successfully delivered interior projects in Delhi, Gurgaon, Greater Noida and Noida Extension West.  We aim to contribute to as many lives through commercial as well as residential projects of all scale and diversities by being:
@@ -113,9 +111,9 @@ export default class Home extends Component {
                         </div>
 
                         <div className="row">
-                            <div className="team-button">
-                                Our Team
-                            </div>
+                                <Link to="/teams" className="team-button">
+                                   Our Team
+                                </Link>
                         </div>
                     </div>
                 </div>
@@ -123,7 +121,7 @@ export default class Home extends Component {
                 {/* What we do section */}
 
                 <div className="what-we-do-section">
-                    <Heading text="About Us" />
+                    <Heading text="What we do" />
                     <div className="container-fluid what-we-do-container">
                         <div className="row">
                             <div className="col-md-3 col-xs-12">
@@ -209,7 +207,7 @@ export default class Home extends Component {
                 </div>
 
                 {/* Design and build section */}
-                <div className="design-section">
+                <div className="design-section" id="design">
                     <div className="container-fluid design-container">
                         <div className="design-section-heading">
                         Design & Build
@@ -219,35 +217,84 @@ export default class Home extends Component {
                         GET YOUR DREAM INTERIORS IN 4 EASY STEPS
                         </div>
                     </div>
-                    <div className="card-row">
+                    <div className="card-row row">
                         <div className="col-md-3 col-xs-12">
-
                             <div className="card">
                                 <div className="index">
                                     1
                                 </div>
                                 <div className="icon">
-
+                                    <img src="./images/icons/chat.png" alt="icon" className="image"/>
                                 </div>
                                 <div className="card-heading">
                                 Talk to Designer
                                 </div>
-                                <div className="footer">
-                                    <div className="points">
-                                    • Know Your Designer
-                                    • Tell Us Your Requirements 
-                                    </div>
+                                <div className="card-points">
+                                    <ul className="points">
+                                        <li>• Know Your Designer</li>
+                                        <li>•  Tell Us Your Requirements </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                         <div className="col-md-3 col-xs-12">
-
+                            <div className="card">
+                                <div className="index">
+                                    2
+                                </div>
+                                <div className="icon">
+                                    <img src="./images/icons/brain.png" alt="icon" className="image"/>
+                                </div>
+                                <div className="card-heading">
+                                    Get the Design Concept
+                                </div>
+                                <div className="card-points">
+                                    <ul className="points">
+                                        <li>• Choose Design Ideas</li>
+                                        <li>• Book Your Designer</li>
+                                        <li>• Finalize Design Concept </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                         <div className="col-md-3 col-xs-12">
-
+                            <div className="card">
+                                <div className="index">
+                                    3
+                                </div>
+                                <div className="icon">
+                                    <img src="./images/icons/cart.png" alt="icon" className="image"/>
+                                </div>
+                                <div className="card-heading">
+                                    Place the Order
+                                </div>
+                                <div className="card-points">
+                                    <ul className="points">
+                                        <li>• Written commitment </li>
+                                        <li>• Get Project Schedule</li>
+                                        <li>• Payments is easy  installments based on Project Schedule</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                         <div className="col-md-3 col-xs-12">
-
+                            <div className="card">
+                                <div className="index">
+                                    4
+                                </div>
+                                <div className="icon">
+                                    <img src="./images/icons/home.png" alt="icon" className="image"/>
+                                </div>
+                                <div className="card-heading">
+                                    Move into Your Dream Space
+                                </div>
+                                <div className="card-points">
+                                    <ul className="points">
+                                        <li>• Get the Keys</li>
+                                        <li>• Final installment on Handover</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -319,7 +366,7 @@ export default class Home extends Component {
                 </Carousel>
 
                 {/* Contact Us Section */}
-                <div className="contact-us-section">
+                <div className="contact-us-section" id="contact">
                     <div className="container-fluid contact-us-container">
                         <div className="row">
                             <div className="col-md-6 col-12 contact-us-card">

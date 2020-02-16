@@ -396,6 +396,47 @@ h1 {
   cursor: pointer;
 }
 
+@media screen and (max-width: 768px){
+.about-section .about-container {
+  padding: 0;
+}
+.about-section .about-container .content {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.about-section .about-container .content .points {
+  padding: 2rem;
+}
+
+.about-section .about-container .content .highlight {
+  font-size: 1.8rem;
+}
+
+.red-highlight {
+  font-size: 1.8rem;
+}
+
+.about-section .about-container .box .quote-content {
+  padding: 10%;
+}
+
+.about-section .about-container .box .quote {
+  font-size: 1.2rem;
+  widows: 70%;
+}
+
+.about-section .about-container .box .quote-signature {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.team-button {
+  margin: 0;
+  font-size: 1rem;
+}
+
+}
 /* what we do section */
 .what-we-do-section {
   padding: 5rem 2rem;
@@ -458,6 +499,27 @@ h1 {
   color: #414042;
 }
 
+@media screen and (max-width: 768px){
+  /* what we do section */
+.what-we-do-section {
+  padding: 5rem 2rem;
+}
+
+.what-we-do-section .what-we-do-container {
+  padding: 0;
+}
+
+
+.box-container .box-image .points li {
+  font-size: 1rem;
+}
+
+.box-container .box-footer {
+  font-size: 1.2rem;
+}
+
+}
+
 /* Designs and build section */
 .design-section {
   background-image: url("/images/Stambha-Artboard1_48.jpg");
@@ -485,6 +547,7 @@ h1 {
   margin: 10px auto;
   border: 2px solid #FF903E;
 }
+
 .design-container .design-section-subheading {
   font-family: 'Open Sans', sans-serif;
   font-size: 2rem;
@@ -498,6 +561,89 @@ h1 {
   margin: 2rem 0;
 }
 
+.design-section .card-row .card {
+  padding: 10px;
+  justify-content: space-between;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+
+  height: 100%;
+}
+
+.design-section .card-row .card .index {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 0.85;
+  color: rgba(33, 33, 33, 0.17);
+
+  align-self: flex-start;
+} 
+.design-section .card-row .card .icon{
+  align-self: center;
+}
+
+.design-section .card-row .card .icon .image{
+  width: 50px;
+  margin: 15px;
+}
+.design-section .card-row .card .card-heading {
+  width: 65%;
+  font-size: 2rem;
+  text-align: center;
+
+  font-weight: bold;
+  line-height: 1.18;
+  color: #212121;
+
+  align-self: center;
+}
+
+.design-section .card-row .card .card-points {
+  height: 120px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.design-section .card-row .card .card-points .points {
+  list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+  /* Designs and build section */
+.design-section {
+  background-image: url("/images/Stambha-Artboard1_48.jpg");
+  padding: 5rem 2rem;
+}
+.design-container {
+  padding: 0;
+}
+
+.design-section-heading {
+  font-size: 1.8rem;
+}
+
+.design-container  .horizontal-line-heading {
+  width: 20%;
+}
+
+.design-container .design-section-subheading {
+  font-size: 1.4rem;
+  margin: 2rem 0;
+}
+
+.design-section .card-row .card .index {
+  font-size: 3rem;
+} 
+.design-section .card-row .card .card-heading {
+  width: 80%;
+  font-size: 1.2rem;
+}
+}
 /* pricing section */
 .pricing-container .price-card {
   background-image: url("/images/pricing-1.jpg");
@@ -530,9 +676,17 @@ h1 {
   font-size: 2rem;
   font-weight: bold;
 }
-.carousel.carousel-slider .control-arrow {
-  background: grey !important;
+
+@media screen and (max-width: 768px) {
+.pricing-container .price-card  .price-content h1{
+  font-size: 2.2rem;
 }
+.pricing-container .price-card  .price-content h3{
+  font-size: 1.2rem;
+}
+}
+
+
 /* testomonial */
 .testimonial {
   background: white;
@@ -562,6 +716,22 @@ h1 {
   font-size: 1.2rem;
   color: #86878b;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+.testimonial .heading {
+  margin-bottom: 10%;
+}
+.testimonial .content {
+  width: 80%;
+}
+.testimonial .content h6{
+  font-size: 1.2rem;
+}
+.testimonial .content p{
+  font-size: .8rem;
+}
+
 }
 
 /* contact us  */
@@ -858,7 +1028,16 @@ h1 {
 .single-project-footer .project-footer .content p {
   font-size: .8rem;
 }
-.single-project-footer .project-footer .content h6 {
-  color: #ee3124;
+  .single-project-footer .project-footer .content h6 {
+    color: #ee3124;
+  }
 }
+
+@media screen and (max-width: 768px) {
+  .order-xs-2 {
+    order: 2;
+  }
+  .order-xs-1 {
+    order: 1;
+  }
 }

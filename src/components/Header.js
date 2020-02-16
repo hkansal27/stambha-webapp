@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { FaAlignRight } from 'react-icons/fa';
 
-import { Link } from 'react-router-dom';
-
+// import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 export default class Navbar extends Component {
 
@@ -34,19 +34,19 @@ export default class Navbar extends Component {
                             &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
                         </li>
                         <li>
-                            <Link to="/about">ABOUT US</Link>
+                            <Link to="/#about">ABOUT US</Link>
                         </li>
                         <li className="show-link">
                             &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
                         </li>
                         <li> 
-                            <Link to="/" >DESIGN & BUILD</Link>
+                            <Link to="/#design" >DESIGN & BUILD</Link>
                         </li>
                         <li className="show-link">
                             &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
                         </li>
                         <li> 
-                            <Link to="/" >CONTACT US &nbsp;&nbsp;&nbsp;</Link>
+                            <Link to="/#contact" >CONTACT US &nbsp;&nbsp;&nbsp;</Link>
                         </li>
                     </ul>
                     <ul className="custom-nav-links">

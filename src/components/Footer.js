@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 export default function Footer() {
     return (
@@ -10,13 +10,13 @@ export default function Footer() {
                         <Link to="/">PROJECTS</Link>
                     </li>
                     <li>
-                        <Link to="/about">ABOUT US</Link>
+                        <Link to="/#about">ABOUT US</Link>
                     </li>
                     <li> 
-                        <Link to="/" >DESIGN & BUILD</Link>
+                        <Link to="/#design" >DESIGN & BUILD</Link>
                     </li>
                     <li> 
-                        <Link to="/" >CONTACT US</Link>
+                        <Link to="/#contact" >CONTACT US</Link>
                     </li>
                 </ul>
                 <ul className="custom-footer-links">
