@@ -405,8 +405,6 @@ h1 {
   padding: 5rem;
 }
 
-.box-container {}
-
 .box-container .box-image {
   padding-bottom: 1rem;
   display: flex;
@@ -498,6 +496,122 @@ h1 {
   color: #ffffff;
 
   margin: 2rem 0;
+}
+
+/* pricing section */
+.pricing-container .price-card {
+  background-image: url("/images/pricing-1.jpg");
+  padding: 0;
+}
+
+.pricing-container .second {
+  background-image: url("/images/pricing-2.jpg");
+  padding: 0;
+}
+.pricing-container .price-card  .price-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+
+  padding: 12%;
+
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+.pricing-container .price-card  .price-content h1{
+  font-size: 3rem;
+}
+.pricing-container .price-card  .price-content h3{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.carousel.carousel-slider .control-arrow {
+  background: grey !important;
+}
+/* testomonial */
+.testimonial {
+  background: white;
+  padding: 5rem 2rem;
+}
+.testimonial .heading {
+  margin-bottom: 5%;
+}
+.testimonial .content {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+}
+.testimonial .content h6{
+  font-size: 2rem;
+  color: #333333;
+  margin: 0;
+}
+.testimonial .content p{
+  font-size: 1.2rem;
+  color: #86878b;
+  margin-bottom: 20px;
+}
+
+/* contact us  */
+.contact-us-section .contact-us-card {
+  background-image: url("/images/contact-us.jpg");
+  padding: 0;
+}
+
+.contact-us-section .contact-us-card .contact-us-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 5%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contact-us-body-heading h1{
+  font-family: Raleway;
+  font-size: 3rem;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--mainWhite);
+}
+.contact-us-body-heading .horizontal-line-heading{
+  text-align: left;
+  width: 10%;
+  border: 2px solid #FF903E;
+}
+.contact-us-section .contact-us-card .contact-us-body input, textarea {
+  border-radius: 7px;
+  border: solid 1px #ffffff;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.contact-us-section .contact-us-card .contact-us-body button {
+  border-radius: 7px;
+  border: solid 1px #ff3600;
+  background: #ff3600;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  color: white;
 }
 
 /* heading */

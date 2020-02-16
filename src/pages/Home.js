@@ -5,7 +5,6 @@ import Heading from '../components/Heading'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
-
 export default class Home extends Component {
     render() {
         return (
@@ -249,6 +248,104 @@ export default class Home extends Component {
                         </div>
                         <div className="col-md-3 col-xs-12">
 
+                        </div>
+                    </div>
+                </div>
+                {/* BHK Pricing section */}
+                <div className="pricing-section">
+                    <div className="container-fluid pricing-container">
+                        <div className="row">
+                            <div className="col-md-6 col-12 price-card">
+                                <div className="price-content">
+                                    <h1>2BHK</h1>
+                                    <h3>Starting from</h3>
+                                    <h3>NR 3.0 Lakhs only</h3>
+                                </div>
+                            </div>
+                            <div className="col-md-6 col-12 price-card second">
+                                    <div className="price-content">
+                                    <h1>3BHK</h1>
+                                    <h3>Starting from</h3>
+                                    <h3>NR 4.0 Lakhs only</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/* Testominial */}
+                <Carousel showThumbs={false} showStatus={false} showIndicators={false}>
+                    <div>
+                        <div className="testimonial">
+                            <Heading text="Testomonial" />
+                            <div className="content">
+                                <p>
+                                    Lorem ipsum dolor sit amet,  consectetur adipisicing elit. Doloribus  accusamus expedita repellat similique odio aspernatur ex, 
+                                    architecto eaquequo suscipit.Lorem ipsum dolor sit amet,  consectetur adipisicing elit. Doloribus  
+                                    accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.
+                                </p>
+                                <h6>Susan W.</h6>
+                                <p>Businessman</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div className="testimonial">
+                            <Heading text="Testomonial" />
+                            <div className="content">
+                                <p>
+                                    Lorem ipsum dolor sit amet,  consectetur adipisicing elit. Doloribus  accusamus expedita repellat similique odio aspernatur ex, 
+                                    architecto eaquequo suscipit.Lorem ipsum dolor sit amet,  consectetur adipisicing elit. Doloribus  
+                                    accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.
+                                </p>
+                                <h6>Susan W.</h6>
+                                <p>Businessman</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div className="testimonial">
+                            <Heading text="Testomonial" />
+                            <div className="content">
+                                <p>
+                                    Lorem ipsum dolor sit amet,  consectetur adipisicing elit. Doloribus  accusamus expedita repellat similique odio aspernatur ex, 
+                                    architecto eaquequo suscipit.Lorem ipsum dolor sit amet,  consectetur adipisicing elit. Doloribus  
+                                    accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.
+                                </p>
+                                <h6>Susan W.</h6>
+                                <p>Businessman</p>
+                            </div>
+                        </div>
+                    </div>
+                </Carousel>
+
+                {/* Contact Us Section */}
+                <div className="contact-us-section">
+                    <div className="container-fluid contact-us-container">
+                        <div className="row">
+                            <div className="col-md-6 col-12 contact-us-card">
+                                <div className="contact-us-body">
+                                <div className="contact-us-body-heading">
+                                    <h1>Contact Us</h1>
+                                    <hr className="horizontal-line-heading"/>
+                                </div>
+                                    <div className="name-input">
+                                        <input placeholder="Name" />
+                                    </div>
+                                    <div className="email-input">
+                                         <input placeholder="Email" />
+                                    </div>
+                                    <div className="message-input">
+                                        <textarea placeholder="Message" rows="6"></textarea>
+                                    </div>
+                                    <div className="button">
+                                        <button>Send Message</button>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div className="col-md-6 col-12 contact-us-map">
+                                <div id="map-canvas" class="map-canvas"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
