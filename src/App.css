@@ -43,6 +43,12 @@ h1 {
   font-size: 4rem;
 }
 
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
 
 .btn-primary {
   display: inline-block;
@@ -259,7 +265,61 @@ h1 {
 
 /* end of footer */
 
+/* main banner */
+.banner-bottom {
+  position: relative;
+  top: -65px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
 
+.mobile-banner-bottom {
+  background-color: #f8f8f8;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #2c2c2c;
+  display: none;
+  background-color: #f8f8f8;
+  justify-content: center;
+}
+
+.mobile-banner-bottom .banner-title-text {
+  margin: 5px 0;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.banner-bottom .banner-title-text {
+  font-size: 2.2rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .banner-bottom .banner-title-text {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner-bottom {
+    display: none;
+  }
+
+  .mobile-banner-bottom {
+    display: flex;
+  }
+}
 
 
 /* project section */
@@ -296,7 +356,7 @@ h1 {
 
 /* About section */
 .about-section {
-  padding: 5rem 2rem;
+  padding: calc(1.5rem + 70px) 2rem 0 2rem;
 }
 
 .about-section .about-container {
@@ -361,7 +421,7 @@ h1 {
   letter-spacing: normal;
   text-align: center;
   color: #414042;
-  widows: 70%;
+  width: 70%;
 }
 
 .about-section .about-container .box .quote-signature {
@@ -396,54 +456,64 @@ h1 {
   cursor: pointer;
 }
 
-@media screen and (max-width: 768px){
-.about-section .about-container {
-  padding: 0;
-}
-.about-section .about-container .content {
-  font-size: 1rem;
-  line-height: 1.6;
+@media screen and (max-width: 768px) {
+  .about-section {
+    padding: calc(1rem + 70px) 2rem 0 2rem;
+  }
+
+  .about-section .about-container {
+    padding: 0;
+  }
+
+  .about-section .about-container .content {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .about-section .about-container .content .points {
+    padding: 2rem;
+  }
+
+  .about-section .about-container .content .highlight {
+    font-size: 1.8rem;
+  }
+
+  .red-highlight {
+    font-size: 1.8rem;
+  }
+
+  .about-section .about-container .box .quote-content {
+    padding: 10% 0;
+  }
+
+  .about-section .about-container .box .quote {
+    font-size: 1.5rem;
+    width: 90%;
+  }
+
+  .about-section .about-container .box .quote-signature {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+
+  .team-button {
+    margin: 10px 0;
+    font-size: 1.5rem;
+  }
+
 }
 
-.about-section .about-container .content .points {
-  padding: 2rem;
-}
-
-.about-section .about-container .content .highlight {
-  font-size: 1.8rem;
-}
-
-.red-highlight {
-  font-size: 1.8rem;
-}
-
-.about-section .about-container .box .quote-content {
-  padding: 10%;
-}
-
-.about-section .about-container .box .quote {
-  font-size: 1.2rem;
-  widows: 70%;
-}
-
-.about-section .about-container .box .quote-signature {
-  font-size: 2rem;
-  margin-top: 2rem;
-}
-
-.team-button {
-  margin: 0;
-  font-size: 1rem;
-}
-
-}
 /* what we do section */
 .what-we-do-section {
-  padding: 5rem 2rem;
+  padding: calc(1.5rem + 70px) 2rem 0 2rem;
 }
 
 .what-we-do-section .what-we-do-container {
   padding: 5rem;
+}
+
+.box-container {
+  height: 100%;
 }
 
 .box-container .box-image {
@@ -497,34 +567,43 @@ h1 {
   letter-spacing: normal;
   text-align: center;
   color: #414042;
+
+  height: calc(100% - 500px);
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   /* what we do section */
-.what-we-do-section {
-  padding: 5rem 2rem;
-}
+  .what-we-do-section {
+    padding: calc(1.5rem + 70px) 15px 0 15px;
+  }
 
-.what-we-do-section .what-we-do-container {
-  padding: 0;
-}
+  .what-we-do-section .what-we-do-container {
+    margin: 2rem 0;
+    padding: 0;
+  }
 
+  .box-container .box-image {
+    height: 300px;
+  }
 
-.box-container .box-image .points li {
-  font-size: 1rem;
-}
+  .box-container .box-image .points li {
+    font-size: .8rem;
+    line-height: 2;
+  }
 
-.box-container .box-footer {
-  font-size: 1.2rem;
-}
+  .box-container .box-footer {
+    font-size: 1.2rem;
+    height: calc(100% - 300px);
+  }
 
 }
 
 /* Designs and build section */
 .design-section {
   background-image: url("/images/Stambha-Artboard1_48.jpg");
-  padding: 5rem 2rem;
+  padding: calc(1.5rem + 70px) 2rem 0 2rem;
 }
+
 .design-container {
   padding: 5rem;
 }
@@ -541,7 +620,7 @@ h1 {
   color: #ffffff;
 }
 
-.design-container  .horizontal-line-heading {
+.design-container .horizontal-line-heading {
   text-align: center;
   width: 6%;
   margin: 10px auto;
@@ -582,15 +661,17 @@ h1 {
   color: rgba(33, 33, 33, 0.17);
 
   align-self: flex-start;
-} 
-.design-section .card-row .card .icon{
+}
+
+.design-section .card-row .card .icon {
   align-self: center;
 }
 
-.design-section .card-row .card .icon .image{
+.design-section .card-row .card .icon .image {
   width: 50px;
   margin: 15px;
 }
+
 .design-section .card-row .card .card-heading {
   width: 65%;
   font-size: 2rem;
@@ -613,37 +694,53 @@ h1 {
   list-style: none;
 }
 
+.design-section .card-row .card .card-points .points li {
+  font-size: .8rem;
+}
+
 @media screen and (max-width: 768px) {
+
   /* Designs and build section */
-.design-section {
-  background-image: url("/images/Stambha-Artboard1_48.jpg");
-  padding: 5rem 2rem;
-}
-.design-container {
-  padding: 0;
+  .design-section {
+    background-image: url("/images/Stambha-Artboard1_48.jpg");
+    padding: calc(1.5rem + 70px) 15px 0 15px;
+  }
+
+  .design-container {
+    padding: 0;
+  }
+
+  .design-section-heading {
+    font-size: 1.8rem;
+  }
+
+  .design-container .horizontal-line-heading {
+    width: 20%;
+  }
+
+  .design-container .design-section-subheading {
+    font-size: 1rem;
+    margin: 2rem 0;
+  }
+
+  .design-section .card-row .card .index {
+    font-size: 3rem;
+  }
+
+  .design-section .card-row .card .icon .image {
+    margin: 0;
 }
 
-.design-section-heading {
-  font-size: 1.8rem;
+  .design-section .card-row .card .card-heading {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  .design-section .card-row .card .card-points {
+    height: 80px;
+  }
 }
 
-.design-container  .horizontal-line-heading {
-  width: 20%;
-}
-
-.design-container .design-section-subheading {
-  font-size: 1.4rem;
-  margin: 2rem 0;
-}
-
-.design-section .card-row .card .index {
-  font-size: 3rem;
-} 
-.design-section .card-row .card .card-heading {
-  width: 80%;
-  font-size: 1.2rem;
-}
-}
 /* pricing section */
 .pricing-container .price-card {
   background-image: url("/images/pricing-1.jpg");
@@ -654,7 +751,8 @@ h1 {
   background-image: url("/images/pricing-2.jpg");
   padding: 0;
 }
-.pricing-container .price-card  .price-content {
+
+.pricing-container .price-card .price-content {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -669,21 +767,24 @@ h1 {
   letter-spacing: normal;
   color: #ffffff;
 }
-.pricing-container .price-card  .price-content h1{
+
+.pricing-container .price-card .price-content h1 {
   font-size: 3rem;
 }
-.pricing-container .price-card  .price-content h3{
+
+.pricing-container .price-card .price-content h3 {
   font-size: 2rem;
   font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {
-.pricing-container .price-card  .price-content h1{
-  font-size: 2.2rem;
-}
-.pricing-container .price-card  .price-content h3{
-  font-size: 1.2rem;
-}
+  .pricing-container .price-card .price-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .pricing-container .price-card .price-content h3 {
+    font-size: 1.2rem;
+  }
 }
 
 
@@ -692,9 +793,11 @@ h1 {
   background: white;
   padding: 5rem 2rem;
 }
+
 .testimonial .heading {
   margin-bottom: 5%;
 }
+
 .testimonial .content {
   display: flex;
   flex-direction: column;
@@ -707,30 +810,35 @@ h1 {
   font-style: normal;
   letter-spacing: normal;
 }
-.testimonial .content h6{
+
+.testimonial .content h6 {
   font-size: 2rem;
   color: #333333;
   margin: 0;
 }
-.testimonial .content p{
+
+.testimonial .content p {
   font-size: 1.2rem;
   color: #86878b;
   margin-bottom: 20px;
 }
 
 @media screen and (max-width: 768px) {
-.testimonial .heading {
-  margin-bottom: 10%;
-}
-.testimonial .content {
-  width: 80%;
-}
-.testimonial .content h6{
-  font-size: 1.2rem;
-}
-.testimonial .content p{
-  font-size: .8rem;
-}
+  .testimonial .heading {
+    margin-bottom: 10%;
+  }
+
+  .testimonial .content {
+    width: 80%;
+  }
+
+  .testimonial .content h6 {
+    font-size: 1.5rem;
+  }
+
+  .testimonial .content p {
+    font-size: 1rem;
+  }
 
 }
 
@@ -749,7 +857,7 @@ h1 {
   margin: 0 auto;
 }
 
-.contact-us-body-heading h1{
+.contact-us-body-heading h1 {
   font-family: Raleway;
   font-size: 3rem;
   font-weight: 800;
@@ -760,12 +868,15 @@ h1 {
   text-align: left;
   color: var(--mainWhite);
 }
-.contact-us-body-heading .horizontal-line-heading{
+
+.contact-us-body-heading .horizontal-line-heading {
   text-align: left;
   width: 10%;
   border: 2px solid #FF903E;
 }
-.contact-us-section .contact-us-card .contact-us-body input, textarea {
+
+.contact-us-section .contact-us-card .contact-us-body input,
+textarea {
   border-radius: 7px;
   border: solid 1px #ffffff;
   background-color: #ffffff;
@@ -804,6 +915,13 @@ h1 {
   border: 2px solid #FF903E;
 }
 
+@media screen and (max-width: 768px) {
+  .heading .horizontal-line-heading {
+    width: 25%;
+  }
+  
+}
+
 
 /* Team Pages */
 .team-banner {
@@ -815,6 +933,7 @@ h1 {
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
 }
+
 .team-banner h1 {
   font-size: 4rem;
   font-family: 'Open Sans', sans-serif;
@@ -832,11 +951,11 @@ h1 {
   margin: 5% 0;
 }
 
-.team-body .team-card  .picture .team-picture {
+.team-body .team-card .picture .team-picture {
   width: 100%;
 }
 
-.team-body .team-card  .team-content {
+.team-body .team-card .team-content {
   font-family: 'Open Sans', sans-serif;
   font-weight: normal;
   font-stretch: normal;
@@ -844,18 +963,20 @@ h1 {
   letter-spacing: normal;
 }
 
-.team-body .team-card  .team-content h1 {
+.team-body .team-card .team-content h1 {
   font-size: 3rem;
   font-weight: 900;
   color: #000000;
 }
-.team-body .team-card  .team-content h3 {
+
+.team-body .team-card .team-content h3 {
   font-size: 2.4rem;
   font-weight: 600;
   line-height: 1.33;
   color: #ee3124;
 }
-.team-body .team-card  .team-content p{
+
+.team-body .team-card .team-content p {
   font-size: 1.2rem;
   line-height: 1.88;
   text-align: justify;
@@ -871,18 +992,20 @@ h1 {
   .team-banner h1 {
     font-size: 2.5rem;
   }
-  
+
   .team-body .team-card {
     margin: 10% 0;
   }
-  
-  .team-body .team-card  .team-content h1 {
+
+  .team-body .team-card .team-content h1 {
     font-size: 2rem;
   }
-  .team-body .team-card  .team-content h3 {
+
+  .team-body .team-card .team-content h3 {
     font-size: 1.5rem;
   }
-  .team-body .team-card  .team-content p{
+
+  .team-body .team-card .team-content p {
     font-size: 1rem;
   }
 
@@ -901,7 +1024,7 @@ h1 {
   text-align: center;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
-} 
+}
 
 .defaultProjectBanner {
   min-height: calc(100vh - 66px);
@@ -936,19 +1059,19 @@ h1 {
   padding: 30px;
 }
 
-.single-project-banner .project-card  h1 {
+.single-project-banner .project-card h1 {
   font-size: 2.4rem;
   margin-bottom: 20px;
 }
 
-.single-project-banner .project-card  p {
+.single-project-banner .project-card p {
   font-size: 1.3rem;
   font-weight: 300;
   color: #58595b;
   margin-bottom: 40px;
 }
 
-.single-project-banner .project-card  h6 {
+.single-project-banner .project-card h6 {
   font-size: 1.6rem;
   font-weight: bold;
 }
@@ -962,10 +1085,11 @@ h1 {
   margin-bottom: 5%;
 }
 
-.single-project-footer  .project-footer {
+.single-project-footer .project-footer {
   display: flex;
   align-items: center;
 }
+
 .single-project-footer .project-footer .back-image {
   height: 100px;
   width: 100px;
@@ -982,10 +1106,12 @@ h1 {
 
   margin-left: 20px;
 }
+
 .single-project-footer .project-footer .content p {
   font-size: 1rem;
   color: #333132;
 }
+
 .single-project-footer .project-footer .content h6 {
   color: #ee3124;
   font-size: 1.5rem;
@@ -999,45 +1125,71 @@ h1 {
   .mobile-on {
     display: block
   }
-  
+
   .project-card {
     position: relative;
     box-shadow: 1.1px 10.9px 17.6px 0.4px rgba(0, 0, 0, 0.04);
     padding: 30px;
   }
-  
-  .project-card  h1 {
+
+  .project-card h1 {
     font-size: 2rem;
     margin-bottom: 30px;
   }
-  
-  .project-card  p {
+
+  .project-card p {
     font-size: 1rem;
     margin-bottom: 50px;
   }
-  
-  .project-card  h6 {
+
+  .project-card h6 {
     font-size: 1.2rem;
   }
 
-.single-project-footer .project-footer .back-image {
-  height: 60px;
-  width: 60px;
-}
+  .single-project-footer .project-footer .back-image {
+    height: 60px;
+    width: 60px;
+  }
 
-.single-project-footer .project-footer .content p {
-  font-size: .8rem;
-}
+  .single-project-footer .project-footer .content p {
+    font-size: .8rem;
+  }
+
   .single-project-footer .project-footer .content h6 {
     color: #ee3124;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .minor-padding {
+    padding: 15px 5px;
+  }
+
+  .zero-padding {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .order-xs-2 {
     order: 2;
   }
+
   .order-xs-1 {
     order: 1;
   }
+}
+
+dl,
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.carousel.carousel-slider .control-arrow {
+  background: darkgray;
+}
+
+.carousel.carousel-slider .control-arrow:hover {
+  background: darkgray;
 }

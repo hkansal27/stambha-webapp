@@ -10,8 +10,19 @@ export default class Home extends Component {
     render() {
         return (
             <>
+                <div className="mobile-banner-bottom">
+                    <div className="banner-title-text">
+                        Interior Design
+                    </div>
+                    <div className="banner-title-text">
+                        Design & Build
+                    </div>
+                    <div className="banner-title-text">
+                        Architecture Design
+                    </div>
+                </div>
                 {/* Main Banner */}
-                <Carousel showThumbs={false} showStatus={false}>
+                <Carousel infiniteLoop={true} showIndicators={false} showThumbs={false} showStatus={false} autoPlay={true} useKeyboardArrows={true}>
                     <div>
                         <img src="/images/banner_1.jpg" alt="banner" />
                     </div>
@@ -22,6 +33,18 @@ export default class Home extends Component {
                         <img src="/images/banner_3.jpg" alt="banner" />
                     </div>
                 </Carousel>
+
+                <div className="banner-bottom row">
+                    <div className="banner-title-text col-4">
+                        Interior Design
+                    </div>
+                    <div className="banner-title-text col-4">
+                        Design & Build
+                    </div>
+                    <div className="banner-title-text col-4">
+                        Architecture Design
+                    </div>
+                </div>
 
                 {/* Project Section */}
                 {/* <div className="project-section">
@@ -42,7 +65,7 @@ export default class Home extends Component {
                     <Heading text="About Us" />
                     <div className="container-fluid about-container">
                         <div className="row">
-                            <div className="col-md-6 col-sm-12 order-xs-2">
+                            <div className="col-md-6 col-sm-12 order-xs-1">
                                 <div className="content-box">
                                     <div className="content">
                                         <span className="highlight"><span className="red-highlight">Stambha</span> Design House</span> embraces creative architects and best interior designers in Noida.
@@ -55,7 +78,7 @@ export default class Home extends Component {
                                 </div>
 
                             </div>
-                            <div className="col-md-6 col-sm-12 order-xs-1">
+                            <div className="col-md-6 col-sm-12 order-xs-2 zero-padding">
                                 <div className="box">
                                     <div className="quote-content">
                                         <div className="quote">
@@ -69,11 +92,8 @@ export default class Home extends Component {
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-md-6 col-sm-12">
+                            <div className="col-md-6 col-sm-12 order-xs-2 zero-padding">
                                 <div className="box">
-                                    <div>
-
-                                    </div>
                                     <div className="quote-content">
                                         <div className="quote">
                                             "Good design is making something
@@ -87,7 +107,7 @@ export default class Home extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-6 col-sm-12">
+                            <div className="col-md-6 col-sm-12 order-xs-1">
                                 <div className="content-box">
                                     <div className="content">
                                         Well designed spaces inspires its users by rejuvenating and re-energizing in every day's life. Besides interior consultant and architecture consultant, the design house has dedicated interior construction team and skilled craftsmen. Our team has successfully delivered interior projects in Delhi, Gurgaon, Greater Noida and Noida Extension West.  We aim to contribute to as many lives through commercial as well as residential projects of all scale and diversities by being:
@@ -111,9 +131,11 @@ export default class Home extends Component {
                         </div>
 
                         <div className="row">
+                            <div className="col-12">
                                 <Link to="/teams" className="team-button">
-                                   Our Team
+                                    Our Team
                                 </Link>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -124,7 +146,7 @@ export default class Home extends Component {
                     <Heading text="What we do" />
                     <div className="container-fluid what-we-do-container">
                         <div className="row">
-                            <div className="col-md-3 col-xs-12">
+                            <div className="col-md-3 col-6 minor-padding">
                                 <div className="box-container">
                                     <div className="box-image image-1">
                                         <div className="points">
@@ -143,7 +165,7 @@ export default class Home extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-3 col-xs-12">
+                            <div className="col-md-3 col-6 minor-padding">
                                 <div className="box-container">
                                     <div className="box-image image-2">
                                         <div className="points">
@@ -162,7 +184,7 @@ export default class Home extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-3 col-xs-12">
+                            <div className="col-md-3 col-6 minor-padding">
                                 <div className="box-container">
                                     <div className="box-image image-3">
                                         <div className="points">
@@ -182,7 +204,7 @@ export default class Home extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-3 col-xs-12">
+                            <div className="col-md-3 col-6 minor-padding">
                                 <div className="box-container">
                                     <div className="box-image image-4">
                                         <div className="points">
@@ -210,24 +232,24 @@ export default class Home extends Component {
                 <div className="design-section" id="design">
                     <div className="container-fluid design-container">
                         <div className="design-section-heading">
-                        Design & Build
+                            Design & Build
                         </div>
-                        <hr className="horizontal-line-heading"/>
+                        <hr className="horizontal-line-heading" />
                         <div className="design-section-subheading">
-                        GET YOUR DREAM INTERIORS IN 4 EASY STEPS
+                            GET YOUR DREAM INTERIORS IN 4 EASY STEPS
                         </div>
                     </div>
                     <div className="card-row row">
-                        <div className="col-md-3 col-xs-12">
+                        <div className="col-md-3 col-6 minor-padding">
                             <div className="card">
                                 <div className="index">
                                     1
                                 </div>
                                 <div className="icon">
-                                    <img src="./images/icons/chat.png" alt="icon" className="image"/>
+                                    <img src="./images/icons/chat.png" alt="icon" className="image" />
                                 </div>
                                 <div className="card-heading">
-                                Talk to Designer
+                                    Talk to Designer
                                 </div>
                                 <div className="card-points">
                                     <ul className="points">
@@ -237,13 +259,13 @@ export default class Home extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-3 col-xs-12">
+                        <div className="col-md-3 col-6 minor-padding">
                             <div className="card">
                                 <div className="index">
                                     2
                                 </div>
                                 <div className="icon">
-                                    <img src="./images/icons/brain.png" alt="icon" className="image"/>
+                                    <img src="./images/icons/brain.png" alt="icon" className="image" />
                                 </div>
                                 <div className="card-heading">
                                     Get the Design Concept
@@ -257,13 +279,13 @@ export default class Home extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-3 col-xs-12">
+                        <div className="col-md-3 col-6 minor-padding">
                             <div className="card">
                                 <div className="index">
                                     3
                                 </div>
                                 <div className="icon">
-                                    <img src="./images/icons/cart.png" alt="icon" className="image"/>
+                                    <img src="./images/icons/cart.png" alt="icon" className="image" />
                                 </div>
                                 <div className="card-heading">
                                     Place the Order
@@ -277,13 +299,13 @@ export default class Home extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-3 col-xs-12">
+                        <div className="col-md-3 col-6 minor-padding">
                             <div className="card">
                                 <div className="index">
                                     4
                                 </div>
                                 <div className="icon">
-                                    <img src="./images/icons/home.png" alt="icon" className="image"/>
+                                    <img src="./images/icons/home.png" alt="icon" className="image" />
                                 </div>
                                 <div className="card-heading">
                                     Move into Your Dream Space
@@ -302,15 +324,15 @@ export default class Home extends Component {
                 <div className="pricing-section">
                     <div className="container-fluid pricing-container">
                         <div className="row">
-                            <div className="col-md-6 col-12 price-card">
+                            <div className="col-6 price-card">
                                 <div className="price-content">
                                     <h1>2BHK</h1>
                                     <h3>Starting from</h3>
                                     <h3>NR 3.0 Lakhs only</h3>
                                 </div>
                             </div>
-                            <div className="col-md-6 col-12 price-card second">
-                                    <div className="price-content">
+                            <div className="col-6 price-card second">
+                                <div className="price-content">
                                     <h1>3BHK</h1>
                                     <h3>Starting from</h3>
                                     <h3>NR 4.0 Lakhs only</h3>
@@ -326,8 +348,8 @@ export default class Home extends Component {
                             <Heading text="Testomonial" />
                             <div className="content">
                                 <p>
-                                    Lorem ipsum dolor sit amet,  consectetur adipisicing elit. Doloribus  accusamus expedita repellat similique odio aspernatur ex, 
-                                    architecto eaquequo suscipit.Lorem ipsum dolor sit amet,  consectetur adipisicing elit. Doloribus  
+                                    Lorem ipsum dolor sit amet,  consectetur adipisicing elit. Doloribus  accusamus expedita repellat similique odio aspernatur ex,
+                                    architecto eaquequo suscipit.Lorem ipsum dolor sit amet,  consectetur adipisicing elit. Doloribus
                                     accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.
                                 </p>
                                 <h6>Susan W.</h6>
@@ -340,8 +362,8 @@ export default class Home extends Component {
                             <Heading text="Testomonial" />
                             <div className="content">
                                 <p>
-                                    Lorem ipsum dolor sit amet,  consectetur adipisicing elit. Doloribus  accusamus expedita repellat similique odio aspernatur ex, 
-                                    architecto eaquequo suscipit.Lorem ipsum dolor sit amet,  consectetur adipisicing elit. Doloribus  
+                                    Lorem ipsum dolor sit amet,  consectetur adipisicing elit. Doloribus  accusamus expedita repellat similique odio aspernatur ex,
+                                    architecto eaquequo suscipit.Lorem ipsum dolor sit amet,  consectetur adipisicing elit. Doloribus
                                     accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.
                                 </p>
                                 <h6>Susan W.</h6>
@@ -354,8 +376,8 @@ export default class Home extends Component {
                             <Heading text="Testomonial" />
                             <div className="content">
                                 <p>
-                                    Lorem ipsum dolor sit amet,  consectetur adipisicing elit. Doloribus  accusamus expedita repellat similique odio aspernatur ex, 
-                                    architecto eaquequo suscipit.Lorem ipsum dolor sit amet,  consectetur adipisicing elit. Doloribus  
+                                    Lorem ipsum dolor sit amet,  consectetur adipisicing elit. Doloribus  accusamus expedita repellat similique odio aspernatur ex,
+                                    architecto eaquequo suscipit.Lorem ipsum dolor sit amet,  consectetur adipisicing elit. Doloribus
                                     accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.
                                 </p>
                                 <h6>Susan W.</h6>
@@ -371,15 +393,15 @@ export default class Home extends Component {
                         <div className="row">
                             <div className="col-md-6 col-12 contact-us-card">
                                 <div className="contact-us-body">
-                                <div className="contact-us-body-heading">
-                                    <h1>Contact Us</h1>
-                                    <hr className="horizontal-line-heading"/>
-                                </div>
+                                    <div className="contact-us-body-heading">
+                                        <h1>Contact Us</h1>
+                                        <hr className="horizontal-line-heading" />
+                                    </div>
                                     <div className="name-input">
                                         <input placeholder="Name" />
                                     </div>
                                     <div className="email-input">
-                                         <input placeholder="Email" />
+                                        <input placeholder="Email" />
                                     </div>
                                     <div className="message-input">
                                         <textarea placeholder="Message" rows="6"></textarea>
@@ -388,7 +410,7 @@ export default class Home extends Component {
                                         <button>Send Message</button>
                                     </div>
                                 </div>
-                                
+
                             </div>
                             <div className="col-md-6 col-12 contact-us-map">
                                 <div id="map-canvas" class="map-canvas"></div>

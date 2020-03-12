@@ -3,7 +3,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 export default function Footer() {
     return (
-        <div className="footer">
+        <div className="footer container">
             <div className="custom-footer-center">
                 <ul className="custom-footer-links">
                     <li> 
