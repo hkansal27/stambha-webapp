@@ -98,7 +98,7 @@ h1 {
   width: 100%;
   padding: 0.75rem 2rem;
   background: var(--offWhite);
-  z-index: 1;
+  z-index: 100;
 }
 
 .custom-nav-header {
@@ -213,11 +213,15 @@ h1 {
   margin: 20px 0;
 }
 
+.custom-footer-links li {
+  font-size: .8rem;;
+}
+
 .custom-footer-links a {
   display: block;
   text-decoration: none;
   transition: var(--mainTransition);
-  font-size: 1rem;
+  font-size: .8rem;
   color: #9C9C9C;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -258,8 +262,12 @@ h1 {
   }
 
   .custom-footer-links a {
-    padding: 0.5rem 0;
-    margin-right: 20px;
+   font-size: 1rem;
+    align-items: center;
+  }
+
+  .custom-footer-links li {
+    font-size: 1rem;;
   }
 }
 
