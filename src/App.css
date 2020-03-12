@@ -458,6 +458,12 @@ h1 {
   cursor: pointer;
 }
 
+.custom-team-icon {
+  font-size: 1.5rem;
+  color: var(--primaryLogoColor);
+  margin: 5px 0 0 10px;
+}
+
 @media screen and (max-width: 768px) {
   .about-section {
     padding: calc(1rem + 70px) 2rem 0 2rem;
@@ -503,11 +509,6 @@ h1 {
     margin-bottom: 0;
     font-size: 1.5rem;
     margin: 5px 0 4px 6px;
-  }
-
-  .custom-team-icon {
-    font-size: 1.5rem;
-    color: var(--primaryLogoColor);
   }
 
 }
@@ -652,7 +653,7 @@ h1 {
 /* Designs and build section */
 .design-section {
   background-image: url("/images/Stambha-Artboard1_48.jpg");
-  padding: calc(1.5rem + 70px) 2rem 0 2rem;
+  padding: calc(1.5rem + 70px) 2rem 2rem 2rem;
 }
 
 .design-container {
@@ -749,6 +750,77 @@ h1 {
   font-size: 1.1rem;
 }
 
+.why-us-container {
+  background-image: url(/images/why-us-background.jpg);
+  padding: calc(1.5rem + 70px) 2rem 5rem 2rem;
+}
+
+.why-us-row .why-us-heading {
+  display: flex;
+  align-items: center;
+  padding: 0 5rem;
+
+  margin-bottom: 3rem;
+}
+
+.why-us-row .why-us-heading .why-us-title {
+  font-family: Raleway;
+  font-size: 3rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: center;
+  color: #212121;
+}
+
+.why-us-row .why-us-heading .why-us-horizontal-line {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.why-us-row .why-us-card {
+  display: flex;
+  align-items: flex-start;
+  margin: 2.5rem 0;
+}
+
+.why-us-row .why-us-card .icon {
+  margin-right: 20px;
+}
+
+.why-us-row .why-us-card .icon .image {
+  width: 50px;
+}
+
+.why-us-row .why-us-card .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.why-us-row .why-us-card .content .card-heading {
+  font-family: Raleway;
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #58595b;
+}
+
+.why-us-row .why-us-card .content .card-subheading {
+  font-family: Raleway;
+  font-size: .8rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #58595b;
+}
+
 @media screen and (max-width: 768px) {
 
   /* Designs and build section */
@@ -794,6 +866,36 @@ h1 {
   .design-section .card-row .card .card-points {
     height: 80px;
   }
+
+  .why-us-container {
+    padding: calc(1.5rem + 70px) 15px 2rem 15px;
+  }
+
+  .why-us-row .why-us-heading {
+    padding: 0 15px;
+    margin-bottom: 2rem;
+  }
+
+  .why-us-row .why-us-heading .why-us-title {
+    font-size: 1.5rem;
+  }
+
+  .why-us-row .why-us-heading .why-us-horizontal-line {
+    width: 70%;
+  }
+
+  .why-us-row .why-us-card {
+    margin: 0;
+  }
+
+  .why-us-row .why-us-card .content .card-heading {
+    font-size: 1rem;
+  }
+
+  .why-us-row .why-us-card .content .card-subheading {
+    font-size: .8rem;
+  }
+
 }
 
 /* pricing section */
@@ -948,6 +1050,17 @@ textarea {
   padding: 10px;
   margin: 10px 0;
   color: white;
+}
+
+.map-canvas {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .map-canvas {
+    height: 300px;
+  }
 }
 
 /* heading */
@@ -1214,13 +1327,17 @@ textarea {
     color: #ee3124;
   }
 }
+.zero-padding {
+  padding-left: 0px;
+  padding-right: 0px;
+}
 
 @media screen and (max-width: 768px) {
   .minor-padding {
     padding: 15px 5px;
   }
 
-  .zero-padding {
+  .zero--mobile-padding {
     padding-left: 0px;
     padding-right: 0px;
   }

@@ -81,7 +81,7 @@ export default class Home extends Component {
                                 </div>
 
                             </div>
-                            <div className="col-md-6 col-sm-12 order-xs-2 zero-padding">
+                            <div className="col-md-6 col-sm-12 order-xs-2 zero--mobile-padding">
                                 <div className="box">
                                     <div className="quote-content">
                                         <div className="quote">
@@ -95,7 +95,7 @@ export default class Home extends Component {
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-md-6 col-sm-12 order-xs-2 zero-padding">
+                            <div className="col-md-6 col-sm-12 order-xs-2 zero--mobile-padding">
                                 <div className="box">
                                     <div className="quote-content">
                                         <div className="quote">
@@ -151,7 +151,7 @@ export default class Home extends Component {
                         <div className="what-we-do-title">
                             What we do
                         </div>
-                        <hr className="what-we-do-horizontal-line"/>
+                        <hr className="what-we-do-horizontal-line" />
                     </div>
                     <div className="container-fluid what-we-do-container">
                         <div className="row">
@@ -328,7 +328,106 @@ export default class Home extends Component {
                             </div>
                         </div>
                     </div>
+
                 </div>
+
+                <div className="why-us-container">
+                    <div className="why-us-row row">
+                        <div className="col-12 why-us-heading">
+                            <div className="why-us-title">
+                                Why us
+                            </div>
+                            <hr className="why-us-horizontal-line" />
+                        </div>
+                    </div>
+                    <div className="why-us-row row">
+                        <div className="col-md-4 col-12 minor-padding">
+                            <div className="why-us-card">
+                                <div className="icon">
+                                    <img src="./images/icons/1.png" alt="icon" className="image" />
+                                </div>
+                                <div className="content">
+                                    <div className="card-heading">
+                                        One Point Professional Service
+                                </div>
+                                    <div className="card-subheading">
+                                        Interior design, interior construction &
+                                        architecture consultancy
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-4 col-12 minor-padding">
+                            <div className="why-us-card">
+                                <div className="icon">
+                                    <img src="./images/icons/2.png" alt="icon" className="image" />
+                                </div>
+                                <div className="content">
+                                    <div className="card-heading">
+                                        Competitive Rates
+
+                                </div>
+                                    <div className="card-subheading">
+                                        woodwork starting
+    from Rs850/sq.ft. onwards
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-4 col-12 minor-padding">
+                            <div className="why-us-card">
+                                <div className="icon">
+                                    <img src="./images/icons/3.png" alt="icon" className="image" />
+                                </div>
+                                <div className="content">
+                                    <div className="card-heading">
+                                        Special discounts on Design
+                                </div>
+                                    <div className="card-subheading">
+                                        Charges in Design & Build projects
+    exclusive concept by qualified & industry
+    experienced designers
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-4 col-12 minor-padding">
+                            <div className="why-us-card">
+                                <div className="icon">
+                                    <img src="./images/icons/4.png" alt="icon" className="image" />
+                                </div>
+                                <div className="content">
+                                    <div className="card-heading">
+                                        Hassle Free Process
+                                </div>
+                                    <div className="card-subheading">
+                                        along with agreement & work schedule
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-4 col-12 minor-padding">
+                            <div className="why-us-card">
+                                <div className="icon">
+                                    <img src="./images/icons/5.png" alt="icon" className="image" />
+                                </div>
+                                <div className="content">
+                                    <div className="card-heading">
+                                        Personal Attention
+                                        from Start to End
+                                </div>
+                                    <div className="card-subheading">
+                                        customized detailed design & décor
+                                        assistance during handover
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
                 {/* BHK Pricing section */}
                 <div className="pricing-section">
                     <div className="container-fluid pricing-container">
@@ -350,6 +449,7 @@ export default class Home extends Component {
                         </div>
                     </div>
                 </div>
+
                 {/* Testominial */}
                 <Carousel infiniteLoop={true} showIndicators={false} showThumbs={false} showStatus={false} autoPlay={true} useKeyboardArrows={true}>
                     <div>
@@ -421,8 +521,8 @@ export default class Home extends Component {
                                 </div>
 
                             </div>
-                            <div className="col-md-6 col-12 contact-us-map">
-                                <div id="map-canvas" class="map-canvas"></div>
+                            <div className="col-md-6 col-12 zero-padding contact-us-map">
+                                <div id="map-canvas" className="map-canvas"></div>
                             </div>
                         </div>
                     </div>
