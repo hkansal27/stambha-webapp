@@ -27,25 +27,25 @@ export default class Navbar extends Component {
                         </button>
                     </div>
                     <ul className={this.state.isOpen ? "custom-nav-links show-nav" : "custom-nav-links"}>
-                        <li> 
+                        <li onClick={this.handleToggle}> 
                             <Link to="/">PROJECTS</Link>
                         </li>
                         <li className="show-link">
                             &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
                         </li>
-                        <li>
+                        <li onClick={this.handleToggle}>
                             <Link to="/#about">ABOUT US</Link>
                         </li>
                         <li className="show-link">
                             &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
                         </li>
-                        <li> 
+                        <li onClick={this.handleToggle}> 
                             <Link to="/#design" >DESIGN & BUILD</Link>
                         </li>
                         <li className="show-link">
                             &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
                         </li>
-                        <li> 
+                        <li onClick={this.handleToggle}> 
                             <Link to="/#contact" >CONTACT US &nbsp;&nbsp;&nbsp;</Link>
                         </li>
                     </ul>

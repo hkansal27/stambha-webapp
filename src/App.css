@@ -440,8 +440,9 @@ h1 {
 
 .team-button {
   display: flex;
-  width: 100%;
+  align-items: center;
   justify-content: flex-end;
+  width: 100%;
   margin: 3rem 0;
   margin-bottom: 0;
   font-family: 'Open Sans', sans-serif;
@@ -501,6 +502,12 @@ h1 {
     margin: 10px 0;
     margin-bottom: 0;
     font-size: 1.5rem;
+    margin: 5px 0 4px 6px;
+  }
+
+  .custom-team-icon {
+    font-size: 1.5rem;
+    color: var(--primaryLogoColor);
   }
 
 }
@@ -893,7 +900,7 @@ h1 {
 /* contact us  */
 .contact-us-section .contact-us-card {
   background-image: url("/images/contact-us.jpg");
-  padding: 0;
+  padding: calc(1.5rem + 70px) 15px 0 15px;
 }
 
 .contact-us-section .contact-us-card .contact-us-body {
@@ -1234,7 +1241,8 @@ ul {
   margin-bottom: 0;
 }
 
-.carousel .control-arrow, .carousel.carousel-slider .control-arrow {
+.carousel .control-arrow,
+.carousel.carousel-slider .control-arrow {
   background: darkgray !important;
 }
 

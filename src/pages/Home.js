@@ -6,6 +6,9 @@ import { Link } from 'react-router-dom';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
+import { IoIosArrowForward } from "react-icons/io";
+
+
 export default class Home extends Component {
     render() {
         return (
@@ -133,7 +136,7 @@ export default class Home extends Component {
                         <div className="row">
                             <div className="col-12">
                                 <Link to="/teams" className="team-button">
-                                    Our Team
+                                    Our Team <IoIosArrowForward className="custom-team-icon" />
                                 </Link>
                             </div>
                         </div>
