@@ -7,7 +7,7 @@ export default function Footer() {
             <div className="custom-footer-center">
                 <ul className="custom-footer-links">
                     <li> 
-                        <Link to="/">PROJECTS</Link>
+                        <Link to="/#project">PROJECTS</Link>
                     </li>
                     <li>
                         <Link to="/#about">ABOUT US</Link>

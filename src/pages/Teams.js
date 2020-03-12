@@ -3,7 +3,7 @@ import React from 'react'
 export default function Teams() {
     return (
         <>
-            <div className="team-banner defaultTeamBanner">
+            <div className="team-banner defaultTeamBanner" id="team">
                 <h1>The Team</h1>
             </div>
 

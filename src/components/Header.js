@@ -28,7 +28,7 @@ export default class Navbar extends Component {
                     </div>
                     <ul className={this.state.isOpen ? "custom-nav-links show-nav" : "custom-nav-links"}>
                         <li onClick={this.handleToggle}> 
-                            <Link to="/">PROJECTS</Link>
+                            <Link to="/#project">PROJECTS</Link>
                         </li>
                         <li className="show-link">
                             &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;

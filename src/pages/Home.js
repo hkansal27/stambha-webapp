@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 
 import Heading from '../components/Heading'
+import Project from '../components/Project'
+
 import { Link } from 'react-router-dom';
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -49,20 +51,10 @@ export default class Home extends Component {
                     </div>
                 </div>
 
-                {/* Project Section */}
-                {/* <div className="project-section">
-                    <Heading text="Projects" />
-                    <div className="category-title">
-                        <ul>
-                            <li>INTERIORS</li>
-                            <li>ARCHITECTURE</li>
-                            <li>RESIDENTIAL</li>
-                            <li>COMMERCIAL</li>
-                            <li>INSTITUTIONAL</li>
-                        </ul>
-                    </div>
-                </div> */}
+                {/* Project section */}
+                <Project />
 
+               
                 {/* About us */}
                 <div className="about-section" id="about">
                     <Heading text="About Us" />
