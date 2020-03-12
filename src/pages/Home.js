@@ -143,7 +143,13 @@ export default class Home extends Component {
                 {/* What we do section */}
 
                 <div className="what-we-do-section">
-                    <Heading text="What we do" />
+                    {/* <Heading text="What we do" /> */}
+                    <div className="row what-we-do-heading">
+                        <div className="what-we-do-title">
+                            What we do
+                        </div>
+                        <hr className="what-we-do-horizontal-line"/>
+                    </div>
                     <div className="container-fluid what-we-do-container">
                         <div className="row">
                             <div className="col-md-3 col-6 minor-padding">
@@ -342,7 +348,7 @@ export default class Home extends Component {
                     </div>
                 </div>
                 {/* Testominial */}
-                <Carousel showThumbs={false} showStatus={false} showIndicators={false}>
+                <Carousel infiniteLoop={true} showIndicators={false} showThumbs={false} showStatus={false} autoPlay={true} useKeyboardArrows={true}>
                     <div>
                         <div className="testimonial">
                             <Heading text="Testomonial" />

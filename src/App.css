@@ -361,6 +361,7 @@ h1 {
 
 .about-section .about-container {
   padding: 5rem;
+  padding-bottom: 0;
 }
 
 .about-section .about-container .content-box {
@@ -442,7 +443,7 @@ h1 {
   width: 100%;
   justify-content: flex-end;
   margin: 3rem 0;
-
+  margin-bottom: 0;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.5rem;
   font-weight: normal;
@@ -498,6 +499,7 @@ h1 {
 
   .team-button {
     margin: 10px 0;
+    margin-bottom: 0;
     font-size: 1.5rem;
   }
 
@@ -508,9 +510,34 @@ h1 {
   padding: calc(1.5rem + 70px) 2rem 0 2rem;
 }
 
+.what-we-do-section .what-we-do-heading {
+  display: flex;
+  align-items: center;
+  padding: 0 5rem;
+}
+
+.what-we-do-section .what-we-do-heading .what-we-do-title {
+  font-family: Raleway;
+  font-size: 3rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: center;
+  color: #212121;
+}
+
+.what-we-do-horizontal-line {
+  width: 70%;
+  margin: 0 auto;
+}
+
 .what-we-do-section .what-we-do-container {
   padding: 5rem;
 }
+
+
 
 .box-container {
   height: 100%;
@@ -572,9 +599,26 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
+
   /* what we do section */
   .what-we-do-section {
     padding: calc(1.5rem + 70px) 15px 0 15px;
+  }
+
+  .what-we-do-section .what-we-do-heading {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  .what-we-do-section .what-we-do-heading .what-we-do-title {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+
+  .what-we-do-horizontal-line {
+    width: 50%;
+    margin: 0 auto;
   }
 
   .what-we-do-section .what-we-do-container {
@@ -695,7 +739,7 @@ h1 {
 }
 
 .design-section .card-row .card .card-points .points li {
-  font-size: .8rem;
+  font-size: 1.1rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -729,7 +773,11 @@ h1 {
 
   .design-section .card-row .card .icon .image {
     margin: 0;
-}
+  }
+
+  .design-section .card-row .card .card-points .points li {
+    font-size: .8rem;
+  }
 
   .design-section .card-row .card .card-heading {
     width: 90%;
@@ -919,7 +967,7 @@ textarea {
   .heading .horizontal-line-heading {
     width: 25%;
   }
-  
+
 }
 
 
@@ -1186,10 +1234,10 @@ ul {
   margin-bottom: 0;
 }
 
-.carousel.carousel-slider .control-arrow {
-  background: darkgray;
+.carousel .control-arrow, .carousel.carousel-slider .control-arrow {
+  background: darkgray !important;
 }
 
 .carousel.carousel-slider .control-arrow:hover {
-  background: darkgray;
+  background: darkgray !important;
 }
