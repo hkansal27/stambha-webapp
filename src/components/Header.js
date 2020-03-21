@@ -46,7 +46,10 @@ export default class Navbar extends Component {
                             &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
                         </li>
                         <li onClick={this.handleToggle}> 
-                            <Link to="/#contact" >CONTACT US &nbsp;&nbsp;&nbsp;</Link>
+                            <Link to="/#contact" >CONTACT US</Link>
+                        </li>
+                        <li className="show-link">
+                            &nbsp;&nbsp;&nbsp;
                         </li>
                     </ul>
                     <ul className="custom-nav-links">

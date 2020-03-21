@@ -31,7 +31,7 @@
 
 /* globals */
 body {
-  padding-top: 66px;
+  padding-top: 60px;
   color: var(--mainBlack);
   background: var(--mainWhite);
   font-family: 'Open Sans', sans-serif;
@@ -96,8 +96,8 @@ h1 {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0.75rem 2rem;
-  background: var(--offWhite);
+  padding: 0.4rem 2rem;
+  background: white;
   z-index: 100;
 }
 
@@ -335,7 +335,7 @@ h1 {
 
 /* project section */
 .project-section {
-  padding: calc(1.5rem + 70px) 2rem 2rem 2rem;
+  padding: calc(.5rem + 60px) 2rem 2rem 2rem;
   background-color: var(--offWhite);
 }
 
@@ -374,7 +374,7 @@ h1 {
 
 /* About section */
 .about-section {
-  padding: calc(1.5rem + 70px) 2rem 0 2rem;
+  padding: calc(.5rem + 60px) 2rem 0 2rem;
 }
 
 .about-section .about-container {
@@ -484,7 +484,7 @@ h1 {
 
 @media screen and (max-width: 768px) {
   .about-section {
-    padding: calc(1rem + 70px) 2rem 0 2rem;
+    padding: calc(1rem + 60px) 2rem 0 2rem;
   }
 
   .about-section .about-container {
@@ -533,7 +533,7 @@ h1 {
 
 /* what we do section */
 .what-we-do-section {
-  padding: calc(1.5rem + 70px) 2rem 0 2rem;
+  padding: calc(.5rem + 60px) 2rem 0 2rem;
 }
 
 .what-we-do-section .what-we-do-heading {
@@ -544,7 +544,7 @@ h1 {
 
 .what-we-do-section .what-we-do-heading .what-we-do-title {
   font-family: Raleway;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -571,8 +571,9 @@ h1 {
 
 .box-container .box-image {
   padding-bottom: 1rem;
+  background-size: cover;
   display: flex;
-  height: 500px;
+  height: 450px;
   align-items: flex-end;
   padding-left: 2rem;
 }
@@ -603,12 +604,12 @@ h1 {
 
 .box-container .box-image .points li {
   font-size: 1.2rem;
-  line-height: 2.53;
+  line-height: 2;
 }
 
 .box-container .box-footer {
   text-align: center;
-  padding: 2rem 0;
+  padding: 10px 0;
   box-shadow: 0px 1px 5px 0.1px rgba(0, 0, 0, 0.15);
   background-color: #f6f6f6;
 
@@ -621,14 +622,14 @@ h1 {
   text-align: center;
   color: #414042;
 
-  height: calc(100% - 500px);
+  height: calc(100% - 450px);
 }
 
 @media screen and (max-width: 768px) {
 
   /* what we do section */
   .what-we-do-section {
-    padding: calc(1.5rem + 70px) 15px 0 15px;
+    padding: calc(.5rem + 60px) 15px 0 15px;
   }
 
   .what-we-do-section .what-we-do-heading {
@@ -638,7 +639,7 @@ h1 {
   }
 
   .what-we-do-section .what-we-do-heading .what-we-do-title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 1;
   }
 
@@ -653,7 +654,7 @@ h1 {
   }
 
   .box-container .box-image {
-    height: 300px;
+    height: 275px;
   }
 
   .box-container .box-image .points li {
@@ -663,7 +664,7 @@ h1 {
 
   .box-container .box-footer {
     font-size: 1.2rem;
-    height: calc(100% - 300px);
+    height: calc(100% - 275px);
   }
 
 }
@@ -671,11 +672,12 @@ h1 {
 /* Designs and build section */
 .design-section {
   background-image: url("/images/Stambha-Artboard1_48.jpg");
-  padding: calc(1.5rem + 70px) 2rem 2rem 2rem;
+  padding: calc(.5rem + 60px) 2rem 2rem 2rem;
 }
 
 .design-container {
   padding: 5rem;
+  padding-top: 2rem;
 }
 
 .design-section-heading {
@@ -770,7 +772,7 @@ h1 {
 
 .why-us-container {
   background-image: url(/images/why-us-background.jpg);
-  padding: calc(1.5rem + 70px) 2rem 5rem 2rem;
+  padding: calc(.5rem + 60px) 2rem 5rem 2rem;
 }
 
 .why-us-row .why-us-heading {
@@ -819,13 +821,13 @@ h1 {
 
 .why-us-row .why-us-card .content .card-heading {
   font-family: Raleway;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   letter-spacing: normal;
   text-align: left;
-  color: #58595b;
+  color: #212121;
 }
 
 .why-us-row .why-us-card .content .card-subheading {
@@ -844,7 +846,7 @@ h1 {
   /* Designs and build section */
   .design-section {
     background-image: url("/images/Stambha-Artboard1_48.jpg");
-    padding: calc(1.5rem + 70px) 15px 0 15px;
+    padding: calc(.5rem + 60px) 15px 0 15px;
   }
 
   .design-container {
@@ -886,7 +888,7 @@ h1 {
   }
 
   .why-us-container {
-    padding: calc(1.5rem + 70px) 15px 2rem 15px;
+    padding: calc(.5rem + 60px) 15px 2rem 15px;
   }
 
   .why-us-row .why-us-heading {
@@ -895,7 +897,7 @@ h1 {
   }
 
   .why-us-row .why-us-heading .why-us-title {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .why-us-row .why-us-heading .why-us-horizontal-line {
@@ -999,6 +1001,9 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
+  .testimonial {
+    padding: 2.5rem 2rem;
+  }
   .testimonial .heading {
     margin-bottom: 10%;
   }
@@ -1020,7 +1025,7 @@ h1 {
 /* contact us  */
 .contact-us-section .contact-us-card {
   background-image: url("/images/contact-us.jpg");
-  padding: calc(1.5rem + 70px) 15px 0 15px;
+  padding: calc(.5rem + 60px) 15px 0 15px;
 }
 
 .contact-us-section .contact-us-card .contact-us-body {
@@ -1210,11 +1215,12 @@ textarea {
   text-align: center;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
-}
+  }
 
 .defaultProjectBanner {
   min-height: calc(100vh - 66px);
-  background: url("/images/portfolio/banner.jpg") center/cover no-repeat;
+  background: url("/images/portfolio/banner.jpg");
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1304,6 +1310,10 @@ textarea {
 }
 
 @media screen and (max-width: 768px) {
+
+  .defaultProjectBanner {
+    min-height: 20vh;
+  }
   .mobile-off {
     display: none;
   }
@@ -1319,7 +1329,7 @@ textarea {
   }
 
   .project-card h1 {
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin-bottom: 30px;
   }
 

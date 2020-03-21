@@ -63,7 +63,7 @@ export default class Home extends Component {
                             <div className="col-md-6 col-sm-12 order-xs-1">
                                 <div className="content-box">
                                     <div className="content">
-                                        <span className="highlight"><span className="red-highlight">Stambha</span> Design House</span> embraces creative architects and best interior designers in Noida.
+                                        <span className="highlight"><span className="red-highlight">STAMBHA</span> DESIGN HOUSE</span> embraces creative architects and best interior designers in Noida.
                                         The design house initiated its humble journey in 2009 with selective works spanning Delhi NCR and other parts of country too. We provide complete interior solutions, turnkey services and architecture consultancy.
                                     </div>
                                     <div className="content">
