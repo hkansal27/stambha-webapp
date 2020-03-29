@@ -446,7 +446,7 @@ export default class Home extends Component {
                 <Carousel infiniteLoop={true} showIndicators={false} showThumbs={false} showStatus={false} autoPlay={true} useKeyboardArrows={true}>
                     <div>
                         <div className="testimonial">
-                            <Heading text="Testomonial" />
+                            <Heading text="Testimonial" />
                             <div className="content">
                                 <p>
                                     Lorem ipsum dolor sit amet,  consectetur adipisicing elit. Doloribus  accusamus expedita repellat similique odio aspernatur ex,
