@@ -1400,3 +1400,7 @@ ul {
 .carousel.carousel-slider .control-arrow:hover {
   background: darkgray !important;
 }
+
+.carousel .slide {
+  background: white !important;
+}
