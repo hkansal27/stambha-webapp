@@ -38,7 +38,7 @@ export default function Footer() {
             <div className="custom-footer-center footer-copyright">
                 <ul className="custom-footer-links">
                     <li> 
-                        © Stambh.org 2020
+                        © stambhadesign.com 2020
                     </li>
                 </ul>
             </div>

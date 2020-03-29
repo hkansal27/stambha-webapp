@@ -565,6 +565,7 @@ h1 {
 
 .what-we-do-section .what-we-do-container {
   padding: 5rem;
+  padding-top: 2.5rem;
 }
 
 
@@ -1159,20 +1160,20 @@ textarea {
 }
 
 .team-body .team-card .team-content h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 900;
   color: #000000;
 }
 
 .team-body .team-card .team-content h3 {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 600;
   line-height: 1.33;
   color: #ee3124;
 }
 
 .team-body .team-card .team-content p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.88;
   text-align: justify;
   color: #58595b;

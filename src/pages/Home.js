@@ -373,10 +373,10 @@ export default class Home extends Component {
                                 </div>
                                 <div className="content">
                                     <div className="card-heading">
-                                        Special discounts on Design
+                                        Special discounts on Design Charges
                                 </div>
                                     <div className="card-subheading">
-                                        Charges in Design & Build projects
+                                        in Design & Build projects
     exclusive concept by qualified & industry
     experienced designers
                                 </div>
@@ -449,12 +449,12 @@ export default class Home extends Component {
                             <Heading text="Testimonial" />
                             <div className="content">
                                 <p>
-                                    Lorem ipsum dolor sit amet,  consectetur adipisicing elit. Doloribus  accusamus expedita repellat similique odio aspernatur ex,
-                                    architecto eaquequo suscipit.Lorem ipsum dolor sit amet,  consectetur adipisicing elit. Doloribus
-                                    accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.
+                                We got lucky to get our interiors done by them. 
+                                They worked real hard and all came out very well. 
+                                WHO SO EVER comes to our home appreciate design aesthetics… We are really satisfied and delighted!
                                 </p>
-                                <h6>Susan W.</h6>
-                                <p>Businessman</p>
+                                <h6>Manish Saxena</h6>
+                                <p>Hospitality Industry</p>
                             </div>
                         </div>
                     </div>
@@ -463,12 +463,11 @@ export default class Home extends Component {
                             <Heading text="Testomonial" />
                             <div className="content">
                                 <p>
-                                    Lorem ipsum dolor sit amet,  consectetur adipisicing elit. Doloribus  accusamus expedita repellat similique odio aspernatur ex,
-                                    architecto eaquequo suscipit.Lorem ipsum dolor sit amet,  consectetur adipisicing elit. Doloribus
-                                    accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.
+                                We got our interiors done by them for our very first house and it came out real well in our low budget. 
+                                They are very good with their work and whosoever see’s the house gets really impressed.
                                 </p>
-                                <h6>Susan W.</h6>
-                                <p>Businessman</p>
+                                <h6>Mrinalini Sinha</h6>
+                                <p>Cabin Crew Incharge (Inflight services)</p>
                             </div>
                         </div>
                     </div>
@@ -477,12 +476,11 @@ export default class Home extends Component {
                             <Heading text="Testomonial" />
                             <div className="content">
                                 <p>
-                                    Lorem ipsum dolor sit amet,  consectetur adipisicing elit. Doloribus  accusamus expedita repellat similique odio aspernatur ex,
-                                    architecto eaquequo suscipit.Lorem ipsum dolor sit amet,  consectetur adipisicing elit. Doloribus
-                                    accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.
+                                Excellent services in respect of concept & design. They have shown their professionalism during performance of the assignment by prompt responsiveness in completing the project with punctuality on targeted value. The best quality of work satisfied me specially turning my dream home in reality. 
+Thanks Stambha Desgn House !!
                                 </p>
-                                <h6>Susan W.</h6>
-                                <p>Businessman</p>
+                                <h6>P.Krishna</h6>
+                                <p>COO, Production Industry (Home Appliances)</p>
                             </div>
                         </div>
                     </div>
