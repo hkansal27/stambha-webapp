@@ -8,7 +8,7 @@ export default function Teams() {
     return (
         <>
             <div className="team-banner defaultTeamBanner" id="team">
-                <h1>The Team</h1>
+                <h1 className="font-bold">The Team</h1>
             </div>
 
             <div className="container team-body">
