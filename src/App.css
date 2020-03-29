@@ -40,7 +40,7 @@ body {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -464,7 +464,7 @@ h1 {
   margin: 3rem 0;
   margin-bottom: 0;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -544,7 +544,7 @@ h1 {
 
 .what-we-do-section .what-we-do-heading .what-we-do-title {
   font-family: Raleway;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -579,19 +579,19 @@ h1 {
 }
 
 .box-container .image-1 {
-  background-image: url("/images/Stambha-Artboard1_37.jpg");
+  background-image: url("/images/interior.jpg");
 }
 
 .box-container .image-2 {
-  background-image: url("/images/Stambha-Artboard1_39.jpg");
+  background-image: url("/images/design.jpg");
 }
 
 .box-container .image-3 {
-  background-image: url("/images/Stambha-Artboard1_41.jpg");
+  background-image: url("/images/furniture.jpg");
 }
 
 .box-container .image-4 {
-  background-image: url("/images/Stambha-Artboard1_43.jpg");
+  background-image: url("/images/architecture.jpg");
 }
 
 .box-container .box-image .points ul {

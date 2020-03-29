@@ -20,7 +20,7 @@ export default class Navbar extends Component {
                 <div className="custom-nav-center">
                     <div className="custom-nav-header">
                         <Link to="/">
-                            <img src="/images/Logo.jpg" alt="Stambha Logo" className="logo-img"/>
+                            <img src="/images/Logo.png" alt="Stambha Logo" className="logo-img"/>
                         </Link>
                         <button type="button" className="custom-nav-btn" onClick={this.handleToggle}>
                             <FaAlignRight className="custom-nav-icon" />
