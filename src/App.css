@@ -1224,7 +1224,7 @@ textarea {
 
 .defaultProjectBanner {
   min-height: calc(100vh - 66px);
-  background: url("/images/portfolio/banner.jpg");
+  background: url("/images/portfolio/Banner.jpg");
   background-size: cover;
   display: flex;
   align-items: center;

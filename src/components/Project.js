@@ -1,75 +1,44 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Heading from '../components/Heading'
 import { HashLink as Link } from 'react-router-hash-link';
 
-export default class Project extends Component {
+import { withProjectConsumer } from "../context";
 
-    render() {
-        return (
-            <div className="project-section" id="project">
-                <Heading text="Projects" />
-                <div className="category-title">
-                    <ul>
-                        <li>INTERIORS</li>
-                        <li>ARCHITECTURE</li>
-                        <li>RESIDENTIAL</li>
-                        <li>COMMERCIAL</li>
-                        <li>INSTITUTIONAL</li>
-                    </ul>
-                </div>
 
-                <div className="project-image-container container">
-                    <div className="row">
-                        <div className="col-12 col-md-4 project-image-card">
-                            <Link to="/property/22">
-                                <img src="./images/project1.jpg" alt="project" className="project-image" />
-                            </Link>
-                        </div>
 
-                        <div className="col-12 col-md-4 project-image-card">
-                            <Link to="/property/22">
-                                <img src="./images/project2.jpg" alt="project" className="project-image" />
-                            </Link>
-                        </div>
-                        <div className="col-12 col-md-4 project-image-card">
-                            <Link to="/property/22">
-                                <img src="./images/project3.jpg" alt="project" className="project-image" />
-                            </Link>
-                        </div>
-                        <div className="col-12 col-md-4 project-image-card">
-                            <Link to="/property/22">
-                                <img src="./images/project4.jpg" alt="project" className="project-image" />
-                            </Link>
-                        </div>
-                        <div className="col-12 col-md-4 project-image-card">
-                            <Link to="/property/22">
-                                <img src="./images/project5.jpg" alt="project" className="project-image" />
-                            </Link>
-                        </div>
-                        <div className="col-12 col-md-4 project-image-card">
-                            <Link to="/property/22">
-                                <img src="./images/project6.jpg" alt="project" className="project-image" />
-                            </Link>
-                        </div>
-                        <div className="col-12 col-md-4 project-image-card">
-                            <Link to="/property/22">
-                                <img src="./images/project7.jpg" alt="project" className="project-image" />
-                            </Link>
-                        </div>
-                        <div className="col-12 col-md-4 project-image-card">
-                            <Link to="/property/22">
-                                <img src="./images/project8.jpg" alt="project" className="project-image" />
-                            </Link>
-                        </div>
-                        <div className="col-12 col-md-4 project-image-card">
-                            <Link to="/property/22">
-                                <img src="./images/project9.jpg" alt="project" className="project-image" />
-                            </Link>
-                        </div>
-                    </div>
-                </div>
+function Project({ context }) {
+    const { handleCategoryChange, selectedProjectList, selectedCategory } = context;
+    let projectList = selectedProjectList ? (selectedProjectList.map(item =>
+        (
+            <div className="col-12 col-md-4 project-image-card">
+                <Link to={`/property/${item.id}`}>
+                    <img src={item.projectSectionImage} alt="project" className="project-image" />
+                </Link>
+            </div>
+        )
+    )) : [];
+    console.log(projectList);
+
+    return (
+        <div className="project-section" id="project">
+            <Heading text="Projects" />
+            <div className="category-title">
+                <ul>
+                    <li style={{ color: selectedCategory === 'interior'? '#ff4e00': 'black'}} onClick={() => handleCategoryChange("interior")}>INTERIORS</li>
+                    <li style={{ color: selectedCategory === 'architecture'? '#ff4e00': 'black'}} onClick={() => handleCategoryChange("architecture")}>ARCHITECTURE</li>
+                    <li style={{ color: selectedCategory === 'residential'? '#ff4e00': 'black'}} onClick={() => handleCategoryChange("residential")}>RESIDENTIAL</li>
+                    <li style={{ color: selectedCategory === 'commercial'? '#ff4e00': 'black'}} onClick={() => handleCategoryChange("commercial")}>COMMERCIAL</li>
+                    <li style={{ color: selectedCategory === 'institutional'? '#ff4e00': 'black'}} onClick={() => handleCategoryChange("institutional")}>INSTITUTIONAL</li>
+                </ul>
             </div>
 
-        )
-    }
+            <div className="project-image-container container">
+                <div className="row">
+                    {projectList}
+                </div>
+            </div>
+        </div>
+    )
 }
+
+export default withProjectConsumer(Project);
