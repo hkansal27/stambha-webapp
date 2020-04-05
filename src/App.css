@@ -376,6 +376,29 @@ h1 {
   cursor: pointer;
 }
 
+.project-show-button {
+  margin: 3rem auto 1rem auto;
+}
+
+.show-button {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.79;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 7px;
+  background-color: #ff2500;
+  padding: .5rem 1.5rem;
+}
+
+.project-show-button-row {
+  justify-content: center;
+}
+
 /* About section */
 .about-section {
   padding: calc(.5rem + 60px) 2rem 0 2rem;
