@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 import Heading from '../components/Heading'
 import Project from '../components/Project'
-
+import MapComponent from '../components/Map'
 import { Link } from 'react-router-dom';
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -512,7 +512,9 @@ Thanks Stambha Desgn House !!
 
                             </div>
                             <div className="col-md-6 col-12 zero-padding contact-us-map">
-                                <div id="map-canvas" className="map-canvas"></div>
+                                <div className="map-canvas">
+                                    <MapComponent />
+                                </div>
                             </div>
                         </div>
                     </div>
