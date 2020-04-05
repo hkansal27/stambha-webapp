@@ -48,7 +48,6 @@ import projectSectionImage_8 from "./projectImage/project_pics/08_project/projec
 import projectImage_8_1 from "./projectImage/project_pics/08_project/image1.jpg";
 import projectImage_8_2 from "./projectImage/project_pics/08_project/image2.jpg";
 import projectImage_8_3 from "./projectImage/project_pics/08_project/image3.jpg";
-import projectImage_8_4 from "./projectImage/project_pics/08_project/image4.jpg";
 
 // 9
 import projectSectionImage_9 from "./projectImage/project_pics/09_project/projectSection.jpg";
@@ -294,8 +293,7 @@ export default [
         images: [
             projectImage_8_1,
             projectImage_8_2,
-            projectImage_8_3,
-            projectImage_8_4
+            projectImage_8_3
         ]
     },
     {
