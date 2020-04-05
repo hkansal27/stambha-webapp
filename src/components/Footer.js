@@ -25,7 +25,7 @@ export default function Footer() {
                             <img src="/images/icons/facebook.png" alt="facebook icon" className="social-media-icon" />
                         </a>
                     </li>
-                    <li>
+                    <li className="instagram-icon">
                         <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/stambhadesign/?hl=en">
                             <img src="/images/icons/instagram.png" alt="instagram icon" className="social-media-icon" />
                         </a>
