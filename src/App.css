@@ -1340,7 +1340,7 @@ textarea {
 @media screen and (max-width: 768px) {
 
   .defaultProjectBanner {
-    min-height: 20vh;
+    min-height: 25vh;
   }
   .mobile-off {
     display: none;

@@ -33,7 +33,7 @@ class ProjectsProvider extends Component {
         let tempProjects = items.map(item => {
             let id = item.sys.id;
             let coverImage = item.images[0] ? item.images[0] : [];
-            let images = item.images.length > 1 ? item.images.slice(1) : [];
+            let images = item.images;
             let room = { ...item.fields, coverImage, images, id };
             return room;
         });

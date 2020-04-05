@@ -238,11 +238,11 @@ export default [
             description:
                 "Fine carved elements, innovation in application and richness of material becomes obvious choice for the jewelry showroom catching the attention of visitors mind by using customized screen, glass reflection and carefully lights highlighting the merchandise.",
             category: {
-                interior: false,
+                interior: true,
                 architecture: false,
                 residential: false,
                 commercial: true,
-                institutional: true,
+                institutional: false,
             }
         },
         images: [
@@ -358,7 +358,7 @@ export default [
                 architecture: false,
                 residential: true,
                 commercial: false,
-                institutional: true,
+                institutional: false,
             }
         },
         images: [
