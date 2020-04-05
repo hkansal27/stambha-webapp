@@ -1,10 +1,6 @@
 import React from 'react'
 
 export default function Teams() {
-    function scrollToTop() {
-        window.scrollTo(0, 0)
-    }
-    
     return (
         <>
             <div className="team-banner defaultTeamBanner" id="team">

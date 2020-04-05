@@ -30,7 +30,7 @@ export default class SingleProject extends Component {
             (
                 <div className="row">
                     <div className="col-12">
-                        <img src={item} className="single-project-image" alt="project-img" />
+                        <img src={item} className="single-project-image" key={item} alt="project-img" />
                     </div>
                 </div>
             )

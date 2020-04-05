@@ -24,7 +24,7 @@ export default class Project extends Component {
             (
                 <div className="col-12 col-md-4 project-image-card">
                     <Link to={`/property/${item.id}`}>
-                        <img src={item.projectSectionImage} alt="project" className="project-image" />
+                        <img src={item.projectSectionImage} key={item.id} alt="project" className="project-image" />
                     </Link>
                 </div>
             )

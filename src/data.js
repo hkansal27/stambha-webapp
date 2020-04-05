@@ -79,6 +79,36 @@ import projectImage_12_2 from "./projectImage/project_pics/12_project/image2.jpg
 import projectImage_12_3 from "./projectImage/project_pics/12_project/image3.jpg";
 import projectImage_12_4 from "./projectImage/project_pics/12_project/image4.jpg";
 
+// 13
+import projectSectionImage_13 from "./projectImage/project_pics/13_project/projectSection.jpg";
+import projectImage_13_1 from "./projectImage/project_pics/13_project/image1.jpg";
+import projectImage_13_2 from "./projectImage/project_pics/13_project/image2.jpg";
+
+// 14
+import projectSectionImage_14 from "./projectImage/project_pics/14_project/projectSection.jpg";
+import projectImage_14_1 from "./projectImage/project_pics/14_project/image1.jpg";
+import projectImage_14_2 from "./projectImage/project_pics/14_project/image2.jpg";
+
+// 15
+import projectSectionImage_15 from "./projectImage/project_pics/15_project/projectSection.jpg";
+import projectImage_15_1 from "./projectImage/project_pics/15_project/image1.jpg";
+import projectImage_15_2 from "./projectImage/project_pics/15_project/image2.jpg";
+
+// 16
+import projectSectionImage_16 from "./projectImage/project_pics/16_project/projectSection.jpg";
+import projectImage_16_1 from "./projectImage/project_pics/16_project/image1.jpg";
+
+// 17
+import projectSectionImage_17 from "./projectImage/project_pics/17_project/projectSection.jpg";
+import projectImage_17_1 from "./projectImage/project_pics/17_project/image1.jpg";
+import projectImage_17_2 from "./projectImage/project_pics/17_project/image2.jpg";
+
+// 18
+import projectSectionImage_18 from "./projectImage/project_pics/18_project/projectSection.jpg";
+import projectImage_18_1 from "./projectImage/project_pics/18_project/image1.jpg";
+import projectImage_18_2 from "./projectImage/project_pics/18_project/image2.jpg";
+import projectImage_18_3 from "./projectImage/project_pics/18_project/image3.jpg";
+
 export default [
     {
         sys: {
@@ -205,7 +235,6 @@ export default [
         },
         fields: {
             projectSectionImage: projectSectionImage_6,
-            coverImage: projectImage_6_1,
             heading: "RD Jewelers, Dwarka, New Delhi",
             description:
                 "Fine carved elements, innovation in application and richness of material becomes obvious choice for the jewelry showroom catching the attention of visitors mind by using customized screen, glass reflection and carefully lights highlighting the merchandise.",
@@ -218,6 +247,7 @@ export default [
             }
         },
         images: [
+            projectImage_6_1,
             projectImage_6_2,
             projectImage_6_3
         ]
@@ -347,7 +377,6 @@ export default [
         },
         fields: {
             projectSectionImage: projectSectionImage_12,
-            coverImage: projectImage_6_1,
             heading: "Solanki’s Residence, Janakpuri, New Delhi",
             description:
                 "The residence is an outcome of fusion between dynamic and traditional thoughts of two generations living together represented in a subtle interior-architectural language. Massing and visual expression has a contemporary approach whereas planning of the house has a reflection of traditional life style.",
@@ -364,6 +393,138 @@ export default [
             projectImage_12_2,
             projectImage_12_3,
             projectImage_12_4
+        ]
+    },
+    {
+        sys: {
+            id: "13"
+        },
+        fields: {
+            projectSectionImage: projectSectionImage_13,
+            heading: "Captain’s Residence, Gurugram",
+            description:
+                "The multistoried house has a studio apartment, independent residential unit floor wise as well as a basement. The design of the residence incorporates multiple spatial requirements while still maintaining the essence of low rise contemporary house. Use of local materials like quartzite and brick clad in a modern style makes building part of the urban fabric.",
+            category: {
+                interior: false,
+                architecture: true,
+                residential: true,
+                commercial: false,
+                institutional: false,
+            }
+        },
+        images: [
+            projectImage_13_1,
+            projectImage_13_2
+        ]
+    },
+    {
+        sys: {
+            id: "14"
+        },
+        fields: {
+            projectSectionImage: projectSectionImage_14,
+            heading: "Residence @Muzaffarnagar",
+            description:
+                "Independent residence designed for joint family. The facade of the residence is designed in contemporary form and style using local sandstone, granite and external wood. Metal edging, pergola and tapered niche windows are silent features of the design cutting the harsh sun and giving the build form a finishing touch.",
+            category: {
+                interior: false,
+                architecture: true,
+                residential: true,
+                commercial: false,
+                institutional: false,
+            }
+        },
+        images: [
+            projectImage_14_1,
+            projectImage_14_2
+        ]
+    },
+    {
+        sys: {
+            id: "15"
+        },
+        fields: {
+            projectSectionImage: projectSectionImage_15,
+            heading: "City Mall & Hotel, Jodhpur",
+            description:
+                "Concept design proposes vernacular elements along with contemporary style to form unique expression for the proposed city mall and hotel at Jodhpur. The design fabric contains traditional elements like canopy, jharokha and red sandstone reflecting the rich historical context of the city.",
+            category: {
+                interior: false,
+                architecture: true,
+                residential: false,
+                commercial: true,
+                institutional: false,
+            }
+        },
+        images: [
+            projectImage_15_1,
+            projectImage_15_2
+        ]
+    },
+    {
+        sys: {
+            id: "16"
+        },
+        fields: {
+            projectSectionImage: projectSectionImage_16,
+            heading: "Mall & Hotel, Guwahati",
+            description:
+                "Dual functions proposed in the monolithic build form. Lower two floors are dedicated to shopping whereas upper floors are retained for hotel purpose. The planning segregates the functions with separate access to utilities. Functions govern the form of the contemporary building.",
+            category: {
+                interior: false,
+                architecture: true,
+                residential: false,
+                commercial: true,
+                institutional: false,
+            }
+        },
+        images: [
+            projectImage_16_1
+        ]
+    },
+    {
+        sys: {
+            id: "17"
+        },
+        fields: {
+            projectSectionImage: projectSectionImage_17,
+            heading: "100 Beds Hospital, Jammu",
+            description:
+                "Concept planning of the hospital is based on combination of smaller functional branch connecting to common spine. This forms series of courts at rear and large forecourt defining the main entrance. The design of the complex responds to climate and surrounding context.",
+            category: {
+                interior: false,
+                architecture: true,
+                residential: false,
+                commercial: true,
+                institutional: false,
+            }
+        },
+        images: [
+            projectImage_17_1,
+            projectImage_17_2,
+        ]
+    },
+    {
+        sys: {
+            id: "18"
+        },
+        fields: {
+            projectSectionImage: projectSectionImage_18,
+            heading: "SPA New Campus – Competition Entry",
+            description:
+                "The landmark style of the architecture evolve from site surrounding, climatic context and functional requirement creating spaces for incubation of ideas for the school of architecture and planning. Geometrical forms and bold design expression assist sustainable environment as well as inspire behavior.",
+            category: {
+                interior: false,
+                architecture: true,
+                residential: false,
+                commercial: false,
+                institutional: true,
+            }
+        },
+        images: [
+            projectImage_18_1,
+            projectImage_18_2,
+            projectImage_18_3,
         ]
     }
 ];
