@@ -58,6 +58,11 @@ export default class Navbar extends Component {
                                 <img src="/images/icons/facebook.png" alt="facebook icon" className="social-media-icon"/>
                             </a>
                         </li>
+                        <li> 
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/stambhadesign/?hl=en">
+                                <img src="/images/icons/instagram.png" alt="instagram icon" className="social-media-icon"/>
+                            </a>
+                        </li>
                         <li>
                             <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCWtKGArml6QrqdhiGxOCyPQ">
                                 <img src="/images/icons/youtube.png" alt="youtube icon" className="social-media-icon"/>

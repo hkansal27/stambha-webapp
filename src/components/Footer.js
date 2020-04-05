@@ -6,38 +6,43 @@ export default function Footer() {
         <div className="footer container">
             <div className="custom-footer-center">
                 <ul className="custom-footer-links">
-                    <li> 
+                    <li>
                         <Link to="/#project">PROJECTS</Link>
                     </li>
                     <li>
                         <Link to="/#about">ABOUT US</Link>
                     </li>
-                    <li> 
+                    <li>
                         <Link to="/#design" >DESIGN & BUILD</Link>
                     </li>
-                    <li> 
+                    <li>
                         <Link to="/#contact" >CONTACT US</Link>
                     </li>
                 </ul>
                 <ul className="custom-footer-links">
-                    <li> 
+                    <li>
                         <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/pg/stambhadesign/posts/?ref=page_internal&mt_nav=0">
-                            <img src="/images/icons/facebook.png" alt="facebook icon" className="social-media-icon"/>
+                            <img src="/images/icons/facebook.png" alt="facebook icon" className="social-media-icon" />
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/stambhadesign/?hl=en">
+                            <img src="/images/icons/instagram.png" alt="instagram icon" className="social-media-icon" />
                         </a>
                     </li>
                     <li>
                         <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCWtKGArml6QrqdhiGxOCyPQ">
-                            <img src="/images/icons/youtube.png" alt="youtube icon" className="social-media-icon"/>
+                            <img src="/images/icons/youtube.png" alt="youtube icon" className="social-media-icon" />
                         </a>
                     </li>
                 </ul>
             </div>
 
-            <hr className="footer-line"/>
+            <hr className="footer-line" />
 
             <div className="custom-footer-center footer-copyright">
                 <ul className="custom-footer-links">
-                    <li> 
+                    <li>
                         © stambhadesign.com 2020
                     </li>
                 </ul>
