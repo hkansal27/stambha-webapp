@@ -503,13 +503,13 @@ export default class Home extends Component {
                                     </div>
                                     <div class="contact">
                                         <span class="label">Phone :&nbsp;</span>
-                                        <span class="value">+1 905 956 7673</span>
+                                        <span class="value">+91 9911336943</span>
                                     </div>
                                     <div class="email">
                                         <span class="label">Email :&nbsp; </span>
                                         <span class="value">
-                                            <a class="contact-us-link" href="mailto:info@stambhadesign.com">
-                                                info@stambhadesign.com
+                                            <a class="contact-us-link" href="mailto:ashish.stambhadesign@gmail.com">
+                                                ashish.stambhadesign@gmail.com
                                             </a>
                                         </span>
                                     </div>
