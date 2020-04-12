@@ -497,20 +497,35 @@ export default class Home extends Component {
                                         <hr className="horizontal-line-heading" />
                                     </div>
                                     <div class="address">
-                                        <span class="label">Address :&nbsp;</span>
-                                        <span class="value"><span>Stambha Design House &nbsp;</span>
-                                        E 1308, Ace Platinum, Zeta-1, Greater Noida, India. 201308</span>
+                                        <span class="label">Address:&nbsp;&nbsp;</span>
+                                        <span class="value"><span> Stambha Design House &nbsp;</span>
+                                            E1308, ACE Platinum,  Zeta-1, Greater Noida, UP-201308</span>
                                     </div>
                                     <div class="contact">
-                                        <span class="label">Phone :&nbsp;</span>
-                                        <span class="value">+91 9911336943</span>
+                                        <span class="label">Phone:&nbsp;&nbsp;</span>
+                                        <span class="value">
+                                            <ul className="contact-list">
+                                                <li className="contact-list">+91 8750730120</li>
+                                                <li className="contact-list">+91 8920817912</li>
+                                            </ul>
+                                        </span>
                                     </div>
                                     <div class="email">
-                                        <span class="label">Email :&nbsp; </span>
+                                        <span class="label">Email:&nbsp;&nbsp;</span>
                                         <span class="value">
-                                            <a class="contact-us-link" href="mailto:ashish.stambhadesign@gmail.com">
-                                                ashish.stambhadesign@gmail.com
-                                            </a>
+                                            <ul className="contact-list">
+                                                <li className="contact-list">
+                                                    <a class="contact-us-link" href="mailto:info.stambhadesign@gmail.com">
+                                                             info.stambhadesign@gmail.com
+                                                    </a>
+                                                </li>
+                                                <li className="contact-list">
+                                                    <a class="contact-us-link" href="mailto:somi.stambhadesign@gmail.com">
+                                                             somi.stambhadesign@gmail.com
+                                                     </a>
+                                                </li>
+                                             </ul>
+                                            
                                         </span>
                                     </div>
                                     {/* <div className="name-input">

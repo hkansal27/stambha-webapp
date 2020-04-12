@@ -180,6 +180,7 @@ h1 {
   display: block;
 }
 
+
 @media screen and (min-width: 768px) {
   .custom-nav-btn {
     display: none;
@@ -1107,6 +1108,7 @@ h1 {
 .website {
   color: white;
   font-size: 14px;
+  display: flex;
   padding: 12px 0;
 }
 
@@ -1114,9 +1116,19 @@ h1 {
   font-size: 15px;
   font-weight: bold;
   color: #FF903E;
+  min-width: 70px;
 }
 
 .contact-us-section .contact-us-card .contact-us-body .value {
+  font-size: 15px;
+}
+
+.contact-us-section .contact-us-card .contact-us-body .value ul {
+  display: inline-block;
+  list-style: none;
+}
+
+.contact-us-section .contact-us-card .contact-us-body .value li {
   font-size: 15px;
 }
 
