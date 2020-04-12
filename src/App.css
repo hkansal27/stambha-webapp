@@ -122,6 +122,11 @@ h1 {
   color: var(--primaryLogoColor);
 }
 
+.custom-nav-close-icon {
+  font-size: 2.5rem;
+  color: #9C9C9C;
+}
+
 .logo-img {
   height: 50px;
 }
@@ -166,11 +171,22 @@ h1 {
   display: none;
 }
 
+.cross-close {
+  text-align: right;
+  margin: 15px 0;
+}
+
+.mobile-show {
+  display: block;
+}
+
 @media screen and (min-width: 768px) {
   .custom-nav-btn {
     display: none;
   }
-
+  .mobile-show {
+    display: none;
+  }
   .custom-nav-center {
     margin: 0 auto;
     display: flex;
@@ -382,7 +398,8 @@ h1 {
 
 .show-button {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.1rem;;
+  font-size: 1.1rem;
+  ;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -1032,6 +1049,7 @@ h1 {
   .testimonial {
     padding: 2.5rem 2rem;
   }
+
   .testimonial .heading {
     margin-bottom: 10%;
   }
@@ -1053,7 +1071,7 @@ h1 {
 /* contact us  */
 .contact-us-section .contact-us-card {
   background-image: url("/images/contact-us.jpg");
-  padding: calc(.5rem + 60px) 15px 0 15px;
+  padding: calc(.5rem + 60px) 15px 15px 15px;
 }
 
 .contact-us-section .contact-us-card .contact-us-body {
@@ -1083,23 +1101,26 @@ h1 {
   border: 2px solid #FF903E;
 }
 
-.contact-us-section .contact-us-card .contact-us-body input,
-textarea {
-  border-radius: 7px;
-  border: solid 1px #ffffff;
-  background-color: #ffffff;
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
+.contact-us-section .contact-us-card .contact-us-body .address,
+.contact,
+.email,
+.website {
+  color: white;
+  font-size: 14px;
+  padding: 12px 0;
 }
 
-.contact-us-section .contact-us-card .contact-us-body button {
-  border-radius: 7px;
-  border: solid 1px #ff3600;
-  background: #ff3600;
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
+.contact-us-section .contact-us-card .contact-us-body .label {
+  font-size: 15px;
+  font-weight: bold;
+  color: #FF903E;
+}
+
+.contact-us-section .contact-us-card .contact-us-body .value {
+  font-size: 15px;
+}
+
+.contact-us-section .contact-us-card .contact-us-body .value a {
   color: white;
 }
 
@@ -1111,6 +1132,22 @@ textarea {
 @media screen and (max-width: 768px) {
   .map-canvas {
     height: 300px;
+  }
+
+  .contact-us-section .contact-us-card .contact-us-body .address,
+  .contact,
+  .email,
+  .website {
+    font-size: 12px;
+    padding: 6px 0;
+  }
+
+  .contact-us-section .contact-us-card .contact-us-body .label {
+    font-size: 12px;
+  }
+
+  .contact-us-section .contact-us-card .contact-us-body .value {
+    font-size: 12px;
   }
 }
 
@@ -1243,7 +1280,7 @@ textarea {
   text-align: center;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
-  }
+}
 
 .defaultProjectBanner {
   min-height: calc(100vh - 66px);
@@ -1342,6 +1379,7 @@ textarea {
   .defaultProjectBanner {
     min-height: 25vh;
   }
+
   .mobile-off {
     display: none;
   }
@@ -1430,6 +1468,5 @@ ul {
 
 .instagram-icon {
   height: 100%;
-  margin-top:4px;
+  margin-top: 4px;
 }
-

@@ -54,7 +54,7 @@ export default class Home extends Component {
                 {/* Project section */}
                 <Project />
 
-               
+
                 {/* About us */}
                 <div className="about-section" id="about">
                     <Heading text="About Us" />
@@ -92,9 +92,9 @@ export default class Home extends Component {
                                     <div className="quote-content">
                                         <div className="quote">
                                             "Good design is making something
-                                                intelligible and memorable.
-                                                Great design is making something
-                                                memorable and meaningful."
+                                            intelligible and memorable.
+                                            Great design is making something
+                                            memorable and meaningful."
                                        </div>
                                         <div className="quote-signature">
                                             - Dieter Rams
@@ -361,7 +361,7 @@ export default class Home extends Component {
                                 </div>
                                     <div className="card-subheading">
                                         woodwork starting
-    from Rs850/sq.ft. onwards
+                                        from Rs850/sq.ft. onwards
                                 </div>
                                 </div>
                             </div>
@@ -377,8 +377,8 @@ export default class Home extends Component {
                                 </div>
                                     <div className="card-subheading">
                                         in Design & Build projects
-    exclusive concept by qualified & industry
-    experienced designers
+                                        exclusive concept by qualified & industry
+                                        experienced designers
                                 </div>
                                 </div>
                             </div>
@@ -449,9 +449,9 @@ export default class Home extends Component {
                             <Heading text="Testimonial" />
                             <div className="content">
                                 <p>
-                                We got lucky to get our interiors done by them. 
-                                They worked real hard and all came out very well. 
-                                WHO SO EVER comes to our home appreciate design aesthetics… We are really satisfied and delighted!
+                                    We got lucky to get our interiors done by them.
+                                    They worked real hard and all came out very well.
+                                    WHO SO EVER comes to our home appreciate design aesthetics… We are really satisfied and delighted!
                                 </p>
                                 <h6>Manish Saxena</h6>
                                 <p>Hospitality Industry</p>
@@ -463,8 +463,8 @@ export default class Home extends Component {
                             <Heading text="Testomonial" />
                             <div className="content">
                                 <p>
-                                We got our interiors done by them for our very first house and it came out real well in our low budget. 
-                                They are very good with their work and whosoever see’s the house gets really impressed.
+                                    We got our interiors done by them for our very first house and it came out real well in our low budget.
+                                    They are very good with their work and whosoever see’s the house gets really impressed.
                                 </p>
                                 <h6>Mrinalini Sinha</h6>
                                 <p>Cabin Crew Incharge (Inflight services)</p>
@@ -476,8 +476,8 @@ export default class Home extends Component {
                             <Heading text="Testomonial" />
                             <div className="content">
                                 <p>
-                                Excellent services in respect of concept & design. They have shown their professionalism during performance of the assignment by prompt responsiveness in completing the project with punctuality on targeted value. The best quality of work satisfied me specially turning my dream home in reality. 
-Thanks Stambha Desgn House !!
+                                    Excellent services in respect of concept & design. They have shown their professionalism during performance of the assignment by prompt responsiveness in completing the project with punctuality on targeted value. The best quality of work satisfied me specially turning my dream home in reality.
+                                    Thanks Stambha Desgn House !!
                                 </p>
                                 <h6>P.Krishna</h6>
                                 <p>COO, Production Industry (Home Appliances)</p>
@@ -496,7 +496,24 @@ Thanks Stambha Desgn House !!
                                         <h1>Contact Us</h1>
                                         <hr className="horizontal-line-heading" />
                                     </div>
-                                    <div className="name-input">
+                                    <div class="address">
+                                        <span class="label">Address :&nbsp;</span>
+                                        <span class="value"><span>Stambha Design House &nbsp;</span>
+                                        E 1308, Ace Platinum, Zeta-1, Greater Noida, India. 201308</span>
+                                    </div>
+                                    <div class="contact">
+                                        <span class="label">Phone :&nbsp;</span>
+                                        <span class="value">+1 905 956 7673</span>
+                                    </div>
+                                    <div class="email">
+                                        <span class="label">Email :&nbsp; </span>
+                                        <span class="value">
+                                            <a class="contact-us-link" href="mailto:info@stambhadesign.com">
+                                                info@stambhadesign.com
+                                            </a>
+                                        </span>
+                                    </div>
+                                    {/* <div className="name-input">
                                         <input placeholder="Name" />
                                     </div>
                                     <div className="email-input">
@@ -507,7 +524,7 @@ Thanks Stambha Desgn House !!
                                     </div>
                                     <div className="button">
                                         <button>Send Message</button>
-                                    </div>
+                                    </div> */}
                                 </div>
 
                             </div>

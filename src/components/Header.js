@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { FaAlignRight } from 'react-icons/fa';
+import { IoIosClose } from 'react-icons/io'
 
 // import { Link } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
@@ -27,6 +28,10 @@ export default class Navbar extends Component {
                         </button>
                     </div>
                     <ul className={this.state.isOpen ? "custom-nav-links show-nav" : "custom-nav-links"}>
+                        <li className="cross-close mobile-show" onClick={this.handleToggle}> 
+                            <IoIosClose className="custom-nav-close-icon" />
+                        </li>
+
                         <li onClick={this.handleToggle}> 
                             <Link to="/#project">PROJECTS</Link>
                         </li>
